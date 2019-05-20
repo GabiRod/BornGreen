@@ -1,0 +1,71 @@
+/*--- OVERAL STYLING ---*/
+body {
+    border: 0px;
+    margin: 0px;
+    font-family: 'Open sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Amatic SC, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--- OVERAL STYLING ---*/
+
+
+/*--- START OF HEADER ---*/
+
+header {
+    background-color: #5a913d;
+    font-family: Amatic SC, sans-serif;
+}
+
+.n {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+#logo {
+    height: 7em;
+    width: auto;
+}
+
+nav {
+    float: right;
+}
+
+/*--- END OF HEADER ---*/
+
+
+
+
+/*--- START OF BODY ---*/
+
+h1 {
+    text-align: center;
+}
+
+/*--- END OF BODY ---*/
+
+
+
+
+
+
+
+
+
+
+/*--- START OF FOOTER ---*/
+
+footer {
+    background-color: #5a913d;
+}
+
+/*--- END OF FOOTER ---*/
