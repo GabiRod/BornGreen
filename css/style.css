@@ -34,15 +34,6 @@ a {
     text-decoration: none;
 }
 
-.back,
-.next,
-.send {
-    background-color: #d26123;
-    color: white;
-    border-radius: 0.3em;
-    padding: 0.1em 1.1em;
-}
-
 /*--- OVERAL STYLING ---*/
 
 /*--- START OF HEADER ---*/
@@ -111,7 +102,7 @@ header {
     grid-template-rows: auto auto auto auto auto auto;
     grid-column-gap: 3em;
     grid-row-gap: 4em;
-    margin-top: 4em;
+    margin: 4em auto 7em auto;
     align-items: center;
 }
 
@@ -119,7 +110,20 @@ header {
     justify-self: end;
 }
 
-
+.start-btn {
+    font-family: Amatic SC, sans-serif;
+    background-color: #d26123;
+    color: white;
+    font-size: 60px;
+    border-radius: 0.3em;
+    padding: 0.1em 1.1em;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    margin: auto;
+    border-left: 7px solid #BF592E;
+    border-bottom: 7px solid #BF592E;
+}
 
 /*--- END OF BODY ---*/
 
