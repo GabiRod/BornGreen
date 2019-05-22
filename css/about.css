@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -86,8 +86,17 @@ header {
     grid-template-columns: 700px 200px;
     grid-template-rows: auto;
     grid-column-gap: 3em;
-    margin-bottom: 7em;
     align-items: center;
+}
+
+.section-grid2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 700px 200px;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    align-items: center;
+    margin-bottom: 7em;
 }
 
 .photo-grid {
@@ -98,6 +107,30 @@ header {
     grid-column-gap: 3em;
     margin-bottom: 7em;
     align-items: center;
+}
+
+.photo1 {
+    background-color: #D26132;
+    border-radius: 0.7em;
+    height: 250px;
+}
+
+.photo2 {
+    background-color: #FAC240;
+    border-radius: 0.7em;
+    height: 250px;
+}
+
+.photo3 {
+    background-color: #27997C;
+    border-radius: 0.7em;
+    height: 250px;
+}
+
+.photo4 {
+    background-color: #9A7159;
+    border-radius: 0.7em;
+    height: 250px;
 }
 
 /*--- END OF BODY ---*/
@@ -111,6 +144,7 @@ footer {
     height: 7em;
     display: flex;
     justify-content: center;
+
 }
 
 .footer-logo {
@@ -118,6 +152,7 @@ footer {
     height: auto;
     position: absolute;
     left: 0.5em;
+
 }
 
 .partners {
