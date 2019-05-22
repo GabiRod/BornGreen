@@ -19,7 +19,6 @@ h3 {
 h1 {
     font-size: 60px;
     text-align: center;
-    margin-top: 0;
 }
 
 h2 {
@@ -35,7 +34,17 @@ a {
     text-decoration: none;
 }
 
+.back,
+.next,
+.send {
+    background-color: #d26123;
+    color: white;
+    border-radius: 0.3em;
+    padding: 0.1em 1.1em;
+}
+
 /*--- OVERAL STYLING ---*/
+
 
 /*--- START OF HEADER ---*/
 
@@ -43,20 +52,21 @@ header {
     background-color: #5a913d;
     font-family: Amatic SC, sans-serif;
     z-index: 100;
-    height: 5em;
+    height: 7em;
 }
 
 .logo-header {
     height: 3.5em;
     width: auto;
     position: absolute;
-    top: 0.7em;
+    top: 1.6em;
     left: 4em;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
+    padding-top: 1.1em;
     padding-right: 4em;
 }
 
@@ -73,78 +83,59 @@ header {
 
 /*--- END OF HEADER ---*/
 
-/*--- START OF BODY ---*/
-
-.titleImage {
-    width: 100%;
-    height: auto;
-}
-
-.titleImage-tablet {
-    display: none;
-}
-
-.titleImage-mobile {
-    display: none;
-}
-
-.main-tree {
-    height: 40em;
-    width: auto;
-    margin-top: 4em;
-}
-
-.step {
-    height: 20em;
-    width: auto;
-}
-
-.step-gift {
-    height: 10em;
-    width: auto;
-}
-
-.step-location {
-    height: 15em;
-    width: auto;
-}
-
-.step-certificate {
-    height: 8em;
-    width: auto;
-}
-
-.process-grid {
-    display: grid;
+.trees {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-column-gap: 3em;
-    grid-row-gap: 4em;
-    margin-bottom: 7em;
-    align-items: center;
+    justify-content: space-between;
+    margin: 7em;
+    text-align: center;
 }
 
-.process-right {
-    justify-self: end;
+input {
+    border-radius: 0.4em;
+    height: 2em;
+    width: 20em;
 }
 
-.start-btn {
+/*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+.next {
     font-family: Amatic SC, sans-serif;
-    background-color: #d26123;
-    color: white;
-    font-size: 60px;
-    border-radius: 0.3em;
-    padding: 0.1em 1.1em;
-    align-self: center;
+    font-size: 40px;
+    float: right;
+    margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+}
+
+.back {
+    font-family: Amatic SC, sans-serif;
+    font-size: 40px;
+    float: left;
+    margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+}
+
+.send {
+    font-family: Amatic SC, sans-serif;
+    font-size: 300%;
+    place-self: center;
+    margin: 2em;
+    margin-top: 5em;
     grid-column-start: 1;
     grid-column-end: span 2;
-    margin: auto;
-    border-left: 7px solid #BF592E;
     border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
 
+
+/*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+
+
+
 /*--- END OF BODY ---*/
+
 
 /*--- START OF FOOTER ---*/
 

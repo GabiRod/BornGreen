@@ -7,6 +7,7 @@ body {
 
 p {
     font-size: 20px;
+    font-family: 'Open sans', sans-serif;
 }
 
 h1,
@@ -19,11 +20,11 @@ h3 {
 h1 {
     font-size: 60px;
     text-align: center;
-    margin-top: 0;
 }
 
 h2 {
     font-size: 40px;
+    text-align: center;
 }
 
 h3 {
@@ -35,7 +36,9 @@ a {
     text-decoration: none;
 }
 
+
 /*--- OVERAL STYLING ---*/
+
 
 /*--- START OF HEADER ---*/
 
@@ -57,6 +60,7 @@ header {
 .menu {
     display: flex;
     justify-content: flex-end;
+
     padding-right: 4em;
 }
 
@@ -73,78 +77,68 @@ header {
 
 /*--- END OF HEADER ---*/
 
+
+
+
+
 /*--- START OF BODY ---*/
 
-.titleImage {
-    width: 100%;
-    height: auto;
+
+.title {
+    font-size: 30px;
 }
 
-.titleImage-tablet {
-    display: none;
-}
 
-.titleImage-mobile {
-    display: none;
-}
-
-.main-tree {
-    height: 40em;
-    width: auto;
-    margin-top: 4em;
-}
-
-.step {
-    height: 20em;
-    width: auto;
-}
-
-.step-gift {
-    height: 10em;
-    width: auto;
-}
-
-.step-location {
-    height: 15em;
-    width: auto;
-}
-
-.step-certificate {
-    height: 8em;
-    width: auto;
-}
-
-.process-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-column-gap: 3em;
-    grid-row-gap: 4em;
-    margin-bottom: 7em;
-    align-items: center;
-}
-
-.process-right {
-    justify-self: end;
-}
-
-.start-btn {
-    font-family: Amatic SC, sans-serif;
+.send {
     background-color: #d26123;
     color: white;
-    font-size: 60px;
     border-radius: 0.3em;
     padding: 0.1em 1.1em;
-    align-self: center;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    margin: auto;
-    border-left: 7px solid #BF592E;
     border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+    font-size: 35px;
+    font-family: Amatic SC, sans-serif;
+
+}
+
+.contact-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+    font-family: Open sans, sans-serif;
+    font-weight: 400;
+}
+
+
+
+input {
+    width: 500px;
+
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: Open sans, sans-serif;
+    padding: 10px;
+
+
+
+}
+
+.message {
+    height: 200px;
+    width: 500px;
 }
 
 /*--- END OF BODY ---*/
+
+
+
+
+
+
 
 /*--- START OF FOOTER ---*/
 
