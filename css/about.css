@@ -6,7 +6,8 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 17px;
+
 }
 
 h1,
@@ -17,7 +18,7 @@ h3 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -79,6 +80,25 @@ header {
 
 /*--- START OF BODY ---*/
 
+.section-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 700px 200px;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    margin-bottom: 7em;
+    align-items: center;
+}
+
+.photo-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    margin-bottom: 7em;
+    align-items: center;
+}
 
 /*--- END OF BODY ---*/
 
