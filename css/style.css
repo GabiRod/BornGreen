@@ -17,16 +17,16 @@ h3 {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 60px;
     text-align: center;
 }
 
 h2 {
-    font-size: 250%;
+    font-size: 40px;
 }
 
 h3 {
-    font-size: 300%;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -113,7 +113,7 @@ header {
 
 .step-certificate {
     height: 8em;
-    width: auto; 
+    width: auto;
 }
 
 .process-grid {
@@ -161,16 +161,20 @@ input {
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .next {
     font-family: Amatic SC, sans-serif;
-    font-size: 300%;
+    font-size: 40px;
     float: right;
     margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
 
 .back {
     font-family: Amatic SC, sans-serif;
-    font-size: 300%;
+    font-size: 40px;
     float: left;
     margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
 
 .send {
@@ -181,7 +185,10 @@ input {
     margin-top: 5em;
     grid-column-start: 1;
     grid-column-end: span 2;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
+
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 
