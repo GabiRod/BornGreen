@@ -45,6 +45,7 @@ a {
 
 /*--- OVERAL STYLING ---*/
 
+
 /*--- START OF HEADER ---*/
 
 header {
@@ -82,7 +83,18 @@ header {
 
 /*--- END OF HEADER ---*/
 
+
+
+
+
 /*--- START OF BODY ---*/
+
+.message {
+    text-align: center;
+    margin: 2em;
+}
+
+/*-------------------------INDEX-----------------------------------------------------------------------------------------------*/
 
 .titleImage {
     width: 100%;
@@ -118,6 +130,45 @@ header {
 .process-right {
     justify-self: end;
 }
+
+
+
+
+/*-------------------------INDEX----------------------------------------------------------------------------------------------*/
+
+/*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+.next {
+    font-family: Amatic SC, sans-serif;
+    font-size: 40px;
+    float: right;
+    margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+}
+
+.back {
+    font-family: Amatic SC, sans-serif;
+    font-size: 40px;
+    float: left;
+    margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+}
+
+.send {
+    font-family: Amatic SC, sans-serif;
+    font-size: 300%;
+    place-self: center;
+    margin: 2em;
+    margin-top: 5em;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+}
+
+
+/*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 
 
 

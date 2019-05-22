@@ -45,6 +45,7 @@ a {
 
 /*--- OVERAL STYLING ---*/
 
+
 /*--- START OF HEADER ---*/
 
 header {
@@ -82,46 +83,47 @@ header {
 
 /*--- END OF HEADER ---*/
 
-/*--- START OF BODY ---*/
 
-.titleImage {
-    width: 100%;
-    height: auto;
+
+
+/*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+.next {
+    font-family: Amatic SC, sans-serif;
+    font-size: 40px;
+    float: right;
+    margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
 
-.step {
-    height: 20em;
-    width: 20em;
+.back {
+    font-family: Amatic SC, sans-serif;
+    font-size: 40px;
+    float: left;
+    margin: 1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
 
-.step-gift {
-    height: 10em;
-    width: 10em;
+.send {
+    font-family: Amatic SC, sans-serif;
+    font-size: 300%;
+    place-self: center;
+    margin: 2em;
+    margin-top: 5em;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
 }
 
-.step-certificate {
-    height: 8em;
-    width: auto;
-}
 
-.process-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-column-gap: 3em;
-    grid-row-gap: 4em;
-    margin-top: 4em;
-    align-items: center;
-}
-
-.process-right {
-    justify-self: end;
-}
+/*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 
 
 
 /*--- END OF BODY ---*/
+
 
 /*--- START OF FOOTER ---*/
 
