@@ -60,7 +60,6 @@ header {
 .menu {
     display: flex;
     justify-content: flex-end;
-
     padding-right: 4em;
 }
 
