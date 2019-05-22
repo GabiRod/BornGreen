@@ -19,6 +19,7 @@ h3 {
 h1 {
     font-size: 60px;
     text-align: center;
+    margin-top: 0;
 }
 
 h2 {
@@ -42,21 +43,20 @@ header {
     background-color: #5a913d;
     font-family: Amatic SC, sans-serif;
     z-index: 100;
-    height: 7em;
+    height: 5em;
 }
 
 .logo-header {
     height: 3.5em;
     width: auto;
     position: absolute;
-    top: 1.6em;
+    top: 0.7em;
     left: 4em;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
-    padding-top: 1.1em;
     padding-right: 4em;
 }
 
@@ -80,14 +80,33 @@ header {
     height: auto;
 }
 
+.titleImage-tablet {
+    display: none;
+}
+
+.titleImage-mobile {
+    display: none;
+}
+
+.main-tree {
+    height: 40em;
+    width: auto;
+    margin-top: 4em;
+}
+
 .step {
     height: 20em;
-    width: 20em;
+    width: auto;
 }
 
 .step-gift {
     height: 10em;
-    width: 10em;
+    width: auto;
+}
+
+.step-location {
+    height: 15em;
+    width: auto;
 }
 
 .step-certificate {
@@ -102,7 +121,7 @@ header {
     grid-template-rows: auto auto auto auto auto auto;
     grid-column-gap: 3em;
     grid-row-gap: 4em;
-    margin: 4em auto 7em auto;
+    margin-bottom: 7em;
     align-items: center;
 }
 
