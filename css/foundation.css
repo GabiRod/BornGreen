@@ -85,6 +85,7 @@ header {
 }
 
 
+
 /*--- END OF BODY ---*/
 
 
@@ -120,3 +121,14 @@ footer {
 }
 
 /*--- END OF FOOTER ---*/
+
+
+@media only screen and (max-width: 750px) {
+
+    .section-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+
+    }
+}
