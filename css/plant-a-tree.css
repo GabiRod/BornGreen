@@ -18,7 +18,7 @@ h3 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -74,15 +74,65 @@ header {
     font-size: 40px;
 }
 
+.close-btn {
+    display: block;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    padding: 0.7em;
+    margin-left: auto;
+    margin-right: 3.3em;
+}
+
+.close-btn-line1 {
+    height: 5px;
+    background-color: white;
+    transform: rotate(-45deg) translate(-19px, 19px);
+}
+
+.close-btn-line2 {
+    height: 5px;
+    background-color: white;
+    transform: rotate(45deg) translate(15px, 15px);
+}
 
 
 /*--- END OF HEADER ---*/
 
+/* START OF PROGRESS BAR */
+
+
+
+.progress-line {
+    height: 10px;
+    width: 100%;
+    background-color: #FDEECA;
+}
+
+.progress-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20%;
+    margin-top: -27px;
+    /*position: relative;*/
+}
+
+.progress-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 70%;
+    background-color: #FDEECA;
+    /* position: absolute;*/
+
+}
+
+/* END OF PROGRESS BAR */
+
 .trees {
     display: grid;
-    margin: 7em;
     grid-template-columns: 320px 320px 320px;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     justify-content: center;
     grid-column-gap: 8rem;
 }
@@ -90,6 +140,9 @@ header {
 .tree {
     background-color: #FAC240;
     padding: 0 1em;
+    border-radius: 0.7em;
+    border-bottom: 5px solid #E4B13B;
+    border-left: 5px solid #E4B13B;
 }
 
 .tree p {
@@ -102,6 +155,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0.5em;
 }
 
 .name-price {
@@ -122,33 +176,13 @@ header {
 .next {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
-    float: right;
-    margin: 1em;
+    margin-top: 1em;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
-}
-
-.back {
-    font-family: Amatic SC, sans-serif;
-    font-size: 40px;
-    float: left;
-    margin: 1em;
-    border-bottom: 7px solid #BF592E;
-    border-left: 7px solid #BF592E;
-}
-
-.send {
-    font-family: Amatic SC, sans-serif;
-    font-size: 300%;
-    place-self: center;
-    margin: 2em;
-    margin-top: 5em;
     grid-column-start: 1;
-    grid-column-end: span 2;
-    border-bottom: 7px solid #BF592E;
-    border-left: 7px solid #BF592E;
+    grid-column-end: span 3;
+    justify-self: end;
 }
-
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 
