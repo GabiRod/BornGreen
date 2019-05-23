@@ -7,7 +7,6 @@ body {
 
 p {
     font-size: 17px;
-
 }
 
 h1,
@@ -27,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -79,75 +78,36 @@ header {
 
 
 /*--- START OF BODY ---*/
+.intro{
+    margin-left: 20%;
+    font-style: italic;
+}
 
-.section-grid {
-    display: grid;
+.container {
     justify-content: center;
-    grid-template-columns: 700px 200px;
-    grid-template-rows: auto;
-    grid-column-gap: 3em;
-    align-items: center;
-}
-
-.section-grid2 {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 700px 200px;
-    grid-template-rows: auto;
-    grid-column-gap: 3em;
-    align-items: center;
-    margin-bottom: 7em;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin-bottom: 5%;
 }
 
-.photo-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: auto;
-    grid-column-gap: 3em;
-    margin-bottom: 7em;
-    align-items: center;
+.infograph {
+    height: 50%;
+    width: auto;
 }
 
-.photo1 {
-    background-color: #D26132;
-    border-radius: 1em;
-    height: 300px;
-    text-align: center;
-}
-
-.foto {
-    height: 11em;
-    width: 11em;
-    margin: 0.6em;
-    border-radius: 1em;
-
-}
-
-.photo2 {
-    background-color: #FAC240;
-    border-radius: 1em;
-    height: 300px;
-    text-align: center;
-}
-
-.photo3 {
-    background-color: #27997C;
-    border-radius: 1em;
-    height: 300px;
-    text-align: center;
-}
-
-.photo4 {
-    background-color: #9A7159;
-    border-radius: 1em;
-    height: 300px;
-    text-align: center;
-}
-
-.hands {
-    margin-top: 3em;
-    align-self: center;
+.back {
+    background-color: #d26123;
+    color: white;
+    border-radius: 0.3em;
+    padding: 0.1em 1.1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+    font-size: 35px;
+    font-family: Amatic SC, sans-serif;
+    margin-left: 20%;
 }
 
 /*--- END OF BODY ---*/
@@ -161,7 +121,6 @@ footer {
     height: 7em;
     display: flex;
     justify-content: center;
-
 }
 
 .footer-logo {
@@ -169,7 +128,6 @@ footer {
     height: auto;
     position: absolute;
     left: 0.5em;
-
 }
 
 .partners {
