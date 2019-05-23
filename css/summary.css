@@ -52,14 +52,14 @@ header {
     background-color: #5a913d;
     font-family: Amatic SC, sans-serif;
     z-index: 100;
-    height: 7em;
+    height: 5em;
 }
 
 .logo-header {
     height: 3.5em;
     width: auto;
     position: absolute;
-    top: 1.6em;
+    top: 0.7em;
     left: 4em;
 }
 
@@ -79,11 +79,58 @@ header {
     font-size: 40px;
 }
 
+.close-btn {
+    display: block;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    padding: 0.7em;
+    margin-left: auto;
+    margin-right: 3.3em;
+}
 
+.close-btn-line1 {
+    height: 5px;
+    background-color: white;
+    transform: rotate(-45deg) translate(-19px, 19px);
+}
+
+.close-btn-line2 {
+    height: 5px;
+    background-color: white;
+    transform: rotate(45deg) translate(15px, 15px);
+}
 
 /*--- END OF HEADER ---*/
 
 
+/* START OF PROGRESS BAR */
+
+
+
+.progress-line {
+    height: 10px;
+    width: 100%;
+    background-color: #FDEECA;
+}
+
+.progress-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20%;
+    margin-top: -27px;
+}
+
+.progress-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 70%;
+    background-color: #FDEECA;
+
+}
+
+/* END OF PROGRESS BAR */
 
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
