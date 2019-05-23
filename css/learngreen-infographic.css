@@ -1,0 +1,145 @@
+/*--- OVERAL STYLING ---*/
+body {
+    border: 0px;
+    margin: 0px;
+    font-family: 'Open sans', sans-serif;
+}
+
+p {
+    font-size: 17px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Amatic SC, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 60px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--- OVERAL STYLING ---*/
+
+
+/*--- START OF HEADER ---*/
+
+header {
+    background-color: #5a913d;
+    font-family: Amatic SC, sans-serif;
+    z-index: 100;
+    height: 5em;
+}
+
+.logo-header {
+    height: 3.5em;
+    width: auto;
+    position: absolute;
+    top: 0.7em;
+    left: 4em;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4em;
+}
+
+.n {
+    color: white;
+    text-decoration: none;
+    margin: 0.3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 40px;
+}
+
+
+
+/*--- END OF HEADER ---*/
+
+
+
+
+
+/*--- START OF BODY ---*/
+.intro{
+    margin-left: 20%;
+    font-style: italic;
+}
+
+.container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin-bottom: 5%;
+}
+
+.infograph {
+    height: 50%;
+    width: auto;
+}
+
+.back {
+    background-color: #d26123;
+    color: white;
+    border-radius: 0.3em;
+    padding: 0.1em 1.1em;
+    border-bottom: 7px solid #BF592E;
+    border-left: 7px solid #BF592E;
+    font-size: 35px;
+    font-family: Amatic SC, sans-serif;
+    margin-left: 20%;
+}
+
+/*--- END OF BODY ---*/
+
+
+
+/*--- START OF FOOTER ---*/
+
+footer {
+    background-color: #5a913d;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 45px;
+    height: auto;
+    position: absolute;
+    left: 0.5em;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.partner {
+    height: 50px;
+    width: auto;
+    margin: auto 10px;
+}
+
+/*--- END OF FOOTER ---*/
