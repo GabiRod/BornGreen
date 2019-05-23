@@ -6,7 +6,8 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: left;
 }
 
 h1,
@@ -17,8 +18,9 @@ h3 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
+    margin-top: 40px;
 }
 
 h2 {
@@ -74,6 +76,45 @@ header {
 
 /*--- START OF BODY ---*/
 
+/*--- GRID ---*/
+.item1 { grid-area: space-left;}
+.item2 { grid-area: map;}
+.item3 { grid-area: map-menu;}
+.item4 { grid-area: space-right;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'space-left map map map-menu map-menu space-right';
+  grid-gap: 0px;
+grid-template-rows: 400px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 0px 0;
+  font-size: 20px;
+}
+
+#map-menu {background-image: url("../images/platform/paper.jpg");
+padding: 20%;}
+
+.styled-select {
+   height: 29px;
+   width: 170px;
+}
+
+.styled-select select {
+   background: white;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px;
+   width: 170px;
+border: 1px solid;
+}
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .next {

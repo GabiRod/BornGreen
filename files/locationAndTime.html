@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/location-time.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -24,12 +25,36 @@
 
     </header>
 
-    <h1> Tell us where and when you want to plant a tree</h1>
+    <h1>Tell us where and when you want to plant a tree</h1>
 
-
-    Choose a city where the tree will be planted.
-
-    Choose a season when the tree will be planted.
+<div class="grid-container">
+  <div class="item1"></div>
+  <div class="item2"><img src="../images/platform/loca-map.png"></div>
+  <div class="item3" id="map-menu">
+   
+   <p>Choose a location for your tree:</p>
+    <div class="styled-select"><select class="selectLocation">
+  <option>- Municipality -</option>
+  <option>Aarhus</option>
+  <option>Odder</option>
+  <option>Skanderborg</option>
+      </select></div>
+ 
+    <p>Choose when the tree will be planted:</p>
+    <div class="styled-select"><select class="selectTime">
+  <option>- Month -</option>
+  <option>March</option>
+  <option>April</option>
+  <option>May</option>
+  <option>August</option>
+  <option>September</option>
+  <option>October</option>
+  <option>November</option>
+    </select></div>
+  </div> 
+ 
+  <div class="item4"></div>
+</div>
 
     <a class="back" href="plantTree.html">BACK</a>
     <a class="next" href="personalInfo.html">NEXT</a>
