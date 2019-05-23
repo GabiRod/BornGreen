@@ -107,7 +107,7 @@ header {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 
 }
 
@@ -144,7 +144,7 @@ header {
 }
 
 .small {
-    height: 7em;
+    height: 9em;
     width: auto;
 }
 
@@ -208,7 +208,7 @@ header {
 .send {
     background-color: #d26123;
     color: white;
-    width: 60px;
+    width: 70px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
