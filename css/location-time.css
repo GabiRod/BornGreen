@@ -132,33 +132,44 @@ header {
 
 }
 
+.progress-descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 16%;
+    margin-top: 20px;
+}
+
+.progress-description {
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
 /* END OF PROGRESS BAR */
 
 /*--- START OF BODY ---*/
 
 /*--- GRID ---*/
+
 .item1 {
-    grid-area: space-left;
+    grid-area: map;
+    width: 670px
 }
 
 .item2 {
-    grid-area: map;
-}
-
-.item3 {
     grid-area: map-menu;
-}
-
-.item4 {
-    grid-area: space-right;
+    background-image: url("../images/platform/paper-location.jpg");
+    padding: 20%;
+    width: 500px;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas:
-        'space-left map map map-menu map-menu space-right';
-    grid-gap: 0px;
-    grid-template-rows: 400px;
+        'map map-menu';
+    grid-template-rows: 470px;
     overflow: hidden;
     justify-content: center;
 
@@ -168,11 +179,6 @@ header {
     text-align: center;
     padding: 0px 0;
     font-size: 20px;
-}
-
-#map-menu {
-    background-image: url("../images/platform/paper.jpg");
-    padding: 20%;
 }
 
 .styled-select {
@@ -190,36 +196,30 @@ header {
 }
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+.back-next-buttons {
+    display: grid;
+    grid-template-columns: 580px 580px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
 .next {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
-    float: right;
-    margin: 1em;
+    margin-top: 1em;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
+    justify-self: end;
 }
 
 .back {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
-    float: left;
-    margin: 1em;
+    margin-top: 1em;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
+    justify-self: start;
 }
-
-.send {
-    font-family: Amatic SC, sans-serif;
-    font-size: 300%;
-    place-self: center;
-    margin: 2em;
-    margin-top: 5em;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    border-bottom: 7px solid #BF592E;
-    border-left: 7px solid #BF592E;
-}
-
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 

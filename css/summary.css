@@ -130,38 +130,49 @@ header {
 
 }
 
+.progress-descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 16%;
+    margin-top: 20px;
+}
+
+.progress-description {
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
 /* END OF PROGRESS BAR */
 
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+.back-next-buttons {
+    display: grid;
+    grid-template-columns: 580px 580px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
 .next {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
-    float: right;
-    margin: 1em;
+    margin-top: 1em;
+    ;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
+    justify-self: end;
 }
 
 .back {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
-    float: left;
-    margin: 1em;
+    margin-top: 1em;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
-}
-
-.send {
-    font-family: Amatic SC, sans-serif;
-    font-size: 300%;
-    place-self: center;
-    margin: 2em;
-    margin-top: 5em;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    border-bottom: 7px solid #BF592E;
-    border-left: 7px solid #BF592E;
+    justify-self: start;
 }
 
 
