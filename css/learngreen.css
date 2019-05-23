@@ -169,7 +169,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background-color: #FAC240;
     grid-column-start: 2;
     grid-column-end: span 2;
