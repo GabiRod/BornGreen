@@ -125,6 +125,21 @@ header {
 
 }
 
+.progress-descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 16%;
+    margin-top: 20px;
+}
+
+.progress-description {
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
 /* END OF PROGRESS BAR */
 
 .trees {
@@ -132,7 +147,7 @@ header {
     grid-template-columns: 320px 320px 320px;
     grid-template-rows: auto;
     justify-content: center;
-    grid-column-gap: 8%;
+    grid-column-gap: 100px;
 }
 
 .tree {
@@ -173,8 +188,9 @@ header {
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .next-button {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1160px;
     grid-template-rows: auto;
+    justify-content: center;
 }
 
 .next {
