@@ -115,7 +115,6 @@ header {
     justify-content: space-between;
     margin: 0 20%;
     margin-top: -27px;
-    /*position: relative;*/
 }
 
 .progress-circle {
@@ -123,7 +122,6 @@ header {
     height: 44px;
     border-radius: 70%;
     background-color: #FDEECA;
-    /* position: absolute;*/
 
 }
 
@@ -132,9 +130,9 @@ header {
 .trees {
     display: grid;
     grid-template-columns: 320px 320px 320px;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     justify-content: center;
-    grid-column-gap: 8rem;
+    grid-column-gap: 8%;
 }
 
 .tree {
@@ -173,14 +171,18 @@ header {
 }
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
+.next-button {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
 .next {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
     margin-top: 1em;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
-    grid-column-start: 1;
-    grid-column-end: span 3;
     justify-self: end;
 }
 

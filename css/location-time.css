@@ -36,6 +36,15 @@ a {
     text-decoration: none;
 }
 
+.back,
+.next,
+.send {
+    background-color: #d26123;
+    color: white;
+    border-radius: 0.3em;
+    padding: 0.1em 1.1em;
+}
+
 /*--- OVERAL STYLING ---*/
 
 /*--- START OF HEADER ---*/
@@ -44,14 +53,14 @@ header {
     background-color: #5a913d;
     font-family: Amatic SC, sans-serif;
     z-index: 100;
-    height: 7em;
+    height: 5em;
 }
 
 .logo-header {
     height: 3.5em;
     width: auto;
     position: absolute;
-    top: 1.6em;
+    top: 0.7em;
     left: 4em;
 }
 
@@ -71,49 +80,113 @@ header {
     font-size: 40px;
 }
 
+.close-btn {
+    display: block;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    padding: 0.7em;
+    margin-left: auto;
+    margin-right: 3.3em;
+}
+
+.close-btn-line1 {
+    height: 5px;
+    background-color: white;
+    transform: rotate(-45deg) translate(-19px, 19px);
+}
+
+.close-btn-line2 {
+    height: 5px;
+    background-color: white;
+    transform: rotate(45deg) translate(15px, 15px);
+}
 
 /*--- END OF HEADER ---*/
+
+/* START OF PROGRESS BAR */
+
+
+
+.progress-line {
+    height: 10px;
+    width: 100%;
+    background-color: #FDEECA;
+}
+
+.progress-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20%;
+    margin-top: -27px;
+    /*position: relative;*/
+}
+
+.progress-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 70%;
+    background-color: #FDEECA;
+    /* position: absolute;*/
+
+}
+
+/* END OF PROGRESS BAR */
 
 /*--- START OF BODY ---*/
 
 /*--- GRID ---*/
-.item1 { grid-area: space-left;}
-.item2 { grid-area: map;}
-.item3 { grid-area: map-menu;}
-.item4 { grid-area: space-right;}
+.item1 {
+    grid-area: space-left;
+}
+
+.item2 {
+    grid-area: map;
+}
+
+.item3 {
+    grid-area: map-menu;
+}
+
+.item4 {
+    grid-area: space-right;
+}
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    'space-left map map map-menu map-menu space-right';
-  grid-gap: 0px;
-grid-template-rows: 400px;
+    display: grid;
+    grid-template-areas:
+        'space-left map map map-menu map-menu space-right';
+    grid-gap: 0px;
+    grid-template-rows: 400px;
     overflow: hidden;
     justify-content: center;
 
 }
 
 .grid-container > div {
-  text-align: center;
-  padding: 0px 0;
-  font-size: 20px;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 20px;
 }
 
-#map-menu {background-image: url("../images/platform/paper.jpg");
-padding: 20%;}
+#map-menu {
+    background-image: url("../images/platform/paper.jpg");
+    padding: 20%;
+}
 
 .styled-select {
-   height: 29px;
-   width: 170px;
+    height: 29px;
+    width: 170px;
 }
 
 .styled-select select {
-   background: white;
-   font-size: 14px;
-   height: 29px;
-   padding: 5px;
-   width: 170px;
-border: 1px solid;
+    background: white;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 170px;
+    border: 1px solid;
 }
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
