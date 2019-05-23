@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/learngreen.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="../images/favicon.ico" />
 
 
     <title>Learn Green</title>
@@ -19,10 +19,10 @@
     <header>
 
         <a href="../index.html">
-            <img id="logo" src="../images/logo.svg" alt="Born Green"> </a>
+            <img class="logo-header" src="../images/logo_borngreen.svg" alt="Born Green"> </a>
 
         <!--     NAVIGATION     -->
-        <nav>
+        <nav class="menu">
 
             <a class="n" href="plantTree.html"> Plant a tree </a>
             <a class="n" href="learnGreen.html"> LearnGreen </a>
@@ -37,12 +37,99 @@
     <h1>LernGreen</h1>
 
 
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="../images/learnGreen/banner_life_oak.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../images/learnGreen/banner_environment_borngreen.jpg" style="width:100%">
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+
+    <div class="section-grid">
+        <div class="btn1">
+            <div class="article1">
+                <h2>Life of an oak </h2>
+                <img class="small" src="../images/learnGreen/life-of-an-oak-infographic.png" alt="inforgraphic of a life of an oak">
+            </div>
+            <a class="read" href="">READ MORE</a>
+        </div>
+
+
+
+        <div class="article2">
+            <h2>our newsletter</h2>
+            <br>
+            Subscribe to our newsletter and learn about the climate change and what we can do to fight it!
+            <br>
+            <br>
+            <input type="text" name="date of birth" placeholder="Write your email adress">
+            <br>
+            <a class="send" href="">SUBSCRIBE</a>
+
+        </div>
+        <div class="btn2">
+            <div class="article3">
+                <h2>How the tree gift will contribute
+                    <br>
+                    to the environment
+                </h2>
+                <img class="small" src="../images/learnGreen/logo_green.svg" alt="contribution of the gift to the enviroment">
+            </div>
+            <a class="read" href="">READ MORE</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+    </script>
 
     <footer>
-
+        <img class="footer-logo" src="../images/logo.svg" alt="Born Green">
+        <div class="partners">
+            <img class="partner" src="../images/partners/logo-naturstyrelsen.png" alt="Naturstyrelsen partner">
+            <img class="partner" src="../images/partners/logo-aarhuskommune.png" alt="Aarhus Kommune partner">
+            <img class="partner" src="../images/partners/logo-planteskole.gif" alt="Aarestrup Planteskole partner">
+        </div>
     </footer>
-
-
 
 
     <script href="../js/javascript.js"></script>

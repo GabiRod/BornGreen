@@ -111,26 +111,43 @@ header {
 
 .photo1 {
     background-color: #D26132;
-    border-radius: 0.7em;
-    height: 250px;
+    border-radius: 1em;
+    height: 300px;
+    text-align: center;
+}
+
+.foto {
+    height: 11em;
+    width: 11em;
+    margin: 0.6em;
+    border-radius: 1em;
+
 }
 
 .photo2 {
     background-color: #FAC240;
-    border-radius: 0.7em;
-    height: 250px;
+    border-radius: 1em;
+    height: 300px;
+    text-align: center;
 }
 
 .photo3 {
     background-color: #27997C;
-    border-radius: 0.7em;
-    height: 250px;
+    border-radius: 1em;
+    height: 300px;
+    text-align: center;
 }
 
 .photo4 {
     background-color: #9A7159;
-    border-radius: 0.7em;
-    height: 250px;
+    border-radius: 1em;
+    height: 300px;
+    text-align: center;
+}
+
+.hands {
+    margin-top: 3em;
+    align-self: center;
 }
 
 /*--- END OF BODY ---*/
