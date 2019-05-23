@@ -153,13 +153,15 @@ footer {
     height: 7em;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .footer-logo {
-    width: 45px;
+    width: 40px;
     height: auto;
     position: absolute;
-    left: 0.5em;
+    left: 3em;
+    bottom: 1.2em;
 }
 
 .partners {
@@ -169,9 +171,9 @@ footer {
 }
 
 .partner {
-    height: 50px;
+    height: 45px;
     width: auto;
-    margin: auto 10px;
+    margin: auto 15px;
 }
 
 /*--- END OF FOOTER ---*/
