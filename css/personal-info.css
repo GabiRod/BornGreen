@@ -253,3 +253,39 @@ footer {
 }
 
 /*--- END OF FOOTER ---*/
+
+@media screen and (max-width: 1300px) {
+    .section-grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        justify-content: center;
+
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .progress-descriptions {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    input {
+        width: 80%;
+    }
+
+    .message {
+        width: 80%;
+    }
+
+
+}
