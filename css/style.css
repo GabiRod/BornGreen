@@ -362,10 +362,88 @@ footer {
     .add-root-4::before {
         display: none;
     }
+
+    .start-btn {
+        margin-top: 1em;
+    }
 }
 
 @media screen and (max-width: 679px) {
     .process-grid {
-        grid-template-columns: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 1em 1em 4em 1em;
     }
+
+    .add-root {
+        width: 50%;
+    }
+
+    .start-btn {
+        font-size: 40px;
+    }
+
+    .orderOne {
+        order: 1;
+    }
+
+    .orderTwo {
+        order: 2;
+    }
+
+    .orderThree {
+        order: 3;
+    }
+
+    .orderFour {
+        order: 4;
+    }
+
+    .orderFive {
+        order: 5;
+    }
+
+    .orderSix {
+        order: 6;
+    }
+
+    .orderSeven {
+        order: 7;
+    }
+
+    .orderEight {
+        order: 8;
+    }
+
+    .orderNine {
+        order: 9;
+    }
+
+    .orderTen {
+        order: 10;
+    }
+
+    .orderEleven {
+        order: 11;
+    }
+
+    .orderOne h1 {
+        margin-bottom: 0;
+        font-size: 50px;
+    }
+
+    .process-grid h2 {
+        margin-bottom: 0;
+    }
+
+    .process-grid h3 {
+        margin: 0.3em 0;
+        font-size: 50px;
+    }
+
+    .step {
+        width: 100%;
+        margin: 0;
+    }
+
 }
