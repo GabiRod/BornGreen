@@ -72,6 +72,7 @@ header {
 
 
 /*--- END OF HEADER ---*/
+/*--- START OF BODY ---*/
 
 .section-grid {
     display: grid;
@@ -84,7 +85,10 @@ header {
     margin-top: 5em;
 }
 
-
+.img {
+    width: 120%;
+    height: auto;
+}
 
 /*--- END OF BODY ---*/
 
@@ -125,13 +129,27 @@ footer {
 /*--- END OF FOOTER ---*/
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 950px) {
 
     .section-grid {
-
         display: flex;
         flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .img {
+        width: 50%;
+    }
+}
 
+@media only screen and (max-width: 750px) {
+    .section-grid {
+        width: 90%;
+    }
+
+    .img {
+        width: 80%;
+    }
 }
