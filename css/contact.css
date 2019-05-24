@@ -168,6 +168,10 @@ footer {
     margin: auto 10px;
 }
 
+.navbar-mobile {
+    display: none;
+}
+
 /*--- END OF FOOTER ---*/
 
 
@@ -190,6 +194,7 @@ footer {
 
 @media screen and (max-width: 950px) {
     .navbar-mobile {
+        display: block;
         position: relative;
     }
 
@@ -277,5 +282,4 @@ footer {
 .contact-center p,
 input {
     max-width: 96%;
-}
 }
