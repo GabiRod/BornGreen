@@ -297,6 +297,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 679px) {
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
+}
+
 @media only screen and (max-width: 580px) {
 
     .back-next-buttons {

@@ -189,3 +189,13 @@ footer {
         width: 80%;
     }
 }
+
+@media screen and (max-width: 679px) {
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+}
