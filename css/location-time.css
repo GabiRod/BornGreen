@@ -165,6 +165,19 @@ header {
     width: 500px;
 }
 
+.item2 p {
+    display: block;
+    margin-left: 20%;
+}
+
+.item2 p:first-of-type {
+    margin-top: 30%;
+}
+
+.styled-select {
+    margin-left: 20%;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas:
