@@ -214,7 +214,7 @@ footer {
     width: 40px;
     height: auto;
     position: absolute;
-    left: 3em;
+    left: 1em;
     bottom: 1.2em;
 }
 
@@ -232,7 +232,7 @@ footer {
 
 /*--- END OF FOOTER ---*/
 
-
+/*-------------------------responsivness-------------------------*/
 @media screen and (max-width: 1820px) {
     .add-root::after {
         content: url(../images/homepage/root-1-medium.svg);
@@ -407,6 +407,8 @@ footer {
 }
 
 @media screen and (max-width: 679px) {
+
+
     .process-grid {
         display: flex;
         flex-direction: column;
@@ -483,5 +485,14 @@ footer {
         width: 100%;
         margin: 0;
     }
+
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
 
 }
