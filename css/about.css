@@ -149,40 +149,6 @@ header {
     align-self: center;
 }
 
-/*--- END OF BODY ---*/
-
-
-
-/*--- START OF FOOTER ---*/
-
-footer {
-    background-color: #5a913d;
-    height: 7em;
-    display: flex;
-    justify-content: center;
-
-}
-
-.footer-logo {
-    height: auto;
-    position: absolute;
-    left: 0.5em;
-    max-height: 100px;
-    width: 50px;
-    margin: 0.5em;
-}
-
-.partners {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-}
-
-.partner {
-    height: 50px;
-    margin: auto 10px;
-}
-
 .hands,
 .logo {
     display: block;
@@ -194,19 +160,46 @@ footer {
     display: none;
 }
 
-/*--- END OF FOOTER ---*/
+/*--- END OF BODY ---*/
 
-@media screen and (max-width: 1415px) {
-    .partner {
-        height: 35%;
-    }
+
+
+/*--- START OF FOOTER ---*/
+
+footer {
+    background-color: #5a913d;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
+.footer-logo {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 1em;
+    bottom: 1.2em;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.partner {
+    height: 45px;
+    width: auto;
+    margin: auto 15px;
+}
+
+
+/*--- END OF FOOTER ---*/
+
+
+
 @media screen and (max-width: 1023px) {
-    * {
-        max-width: 1023px;
-        overflow-x: none;
-    }
 
     .logo {
         display: none;
@@ -216,9 +209,7 @@ footer {
         margin: auto;
     }
 
-    .footer-logo {
-        margin: 5px;
-    }
+
 
     .photo-grid {
         grid-template-columns: 200px 200px;
@@ -276,19 +267,12 @@ footer {
 }
 
 @media screen and (max-width: 679px) {
-    * {
-        max-width: 679px;
-        overflow-x: none;
-    }
 
     .hands,
     .logo {
         display: none;
     }
 
-    .partner {
-        height: 23%;
-    }
 
     .xs {
         display: block;
@@ -310,4 +294,13 @@ footer {
         grid-column-gap: 2em;
         margin-bottom: 2em;
     }
+
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
 }
