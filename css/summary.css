@@ -6,7 +6,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 h1,
@@ -151,16 +151,15 @@ header {
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .back-next-buttons {
     display: grid;
-    grid-template-columns: 580px 580px;
+    grid-template-columns: 400px 400px;
     grid-template-rows: auto;
     justify-content: center;
 }
 
-.next {
+.send {
     font-family: Amatic SC, sans-serif;
     font-size: 40px;
     margin-top: 1em;
-    ;
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
     justify-self: end;
@@ -179,6 +178,53 @@ header {
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 
 
+/* Style inputs, select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 1em;
+    border: 0.1em solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+    display: inline-block;
+}
+
+/* Style the container */
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    align-items: center;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    border-radius: 5px;
+}
+
+.inforight {
+    align-self: start;
+}
+
+#message {
+    height: 15em;
+}
+
+.input-voucher {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.input-input {
+    margin-left: 1em;
+}
 
 /*--- END OF BODY ---*/
 
@@ -212,3 +258,31 @@ footer {
 }
 
 /*--- END OF FOOTER ---*/
+
+
+/* Responsive layout */
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .inforight,
+    .infoleft {
+        align-self: center;
+        width: 90%;
+    }
+
+    .back-next-buttons {
+        grid-template-columns: 250px 250px;
+    }
+
+    @media only screen and (max-width: 580px) {
+        .progress-descriptions {
+            display: none;
+        }
+
+        .back-next-buttons {
+            grid-template-columns: 200px 200px;
+        }
