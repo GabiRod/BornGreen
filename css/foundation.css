@@ -129,10 +129,8 @@ footer {
 
     .section-grid {
 
-        display: grid;
-        grid-template-columns: 80%;
-        grid-template-rows: auto auto;
-
+        display: flex;
+        flex-direction: column;
     }
 
 

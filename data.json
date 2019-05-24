@@ -1,33 +1,20 @@
-[
-    {
-        "type": "",
-        "place": "",
-        "time": ""
+{
+    "type": "",
+    "place": "",
+    "time": ""
 
-    },
+},
 
-    {
-        "firstname": "",
-        "lastname": "",
-        "email": "",
-        "phone": ""
+{
+    "firstname": "",
+    "lastname": "",
+    "email": "",
+    "phone": ""
 
-    },
+},
 
-    {
-        "firstname": "",
-        "lastname": ""
+{
+    "firstname": "",
+    "lastname": ""
 
-    }
-
-]
-
-var ourRequest = new XMLHttpRequest();
-ourRequest.open("POST", "our url");
-ourRequest.open("GET", "our url");
-ourRequest.onload = function () {
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-
-            }
-        }
+}
