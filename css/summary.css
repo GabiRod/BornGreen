@@ -277,12 +277,12 @@ footer {
     .back-next-buttons {
         grid-template-columns: 250px 250px;
     }
-
-    @media only screen and (max-width: 580px) {
-        .progress-descriptions {
+    .progress-descriptions {
             display: none;
         }
 
+    @media only screen and (max-width: 580px) {
+       
         .back-next-buttons {
             grid-template-columns: 200px 200px;
         }
