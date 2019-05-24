@@ -129,7 +129,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 16%;
+    margin: 0 15.5%;
     margin-top: 20px;
 }
 
@@ -138,7 +138,10 @@ header {
     display: block;
     width: 200px;
     text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
+
 
 /* END OF PROGRESS BAR */
 
@@ -240,6 +243,10 @@ footer {
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1300px) {
+    .progress-descriptions {
+        margin: 0 15%;
+    }
+
     .trees {
         grid-column-gap: 20px;
     }
@@ -297,6 +304,11 @@ footer {
 }
 
 @media screen and (max-width: 679px) {
+
+    .progress-descriptions {
+        display: none;
+    }
+
     .trees {
         display: flex;
         flex-direction: column;
@@ -313,5 +325,28 @@ footer {
         width: 300px;
     }
 
+    .next-button {
+        grid-template-columns: 95%;
+    }
 
+}
+
+@media screen and (max-width: 380px) {
+    tree-svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .trees {
+        width: 90%;
+        align-items: center;
+    }
+
+    .tree {
+        width: 100%;
+    }
+
+    .tree:last-of-type {
+        width: 100%;
+    }
 }
