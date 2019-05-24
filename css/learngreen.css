@@ -160,7 +160,7 @@ header {
     border-color: #D26132;
 }
 
-.article2 {
+.article2, .newsletter-wide {
     justify-self: end;
     width: 40%;
     margin: 1em;
@@ -203,6 +203,8 @@ header {
     border-bottom: 7px solid #BF592E;
     border-left: 7px solid #BF592E;
     font-family: Amatic SC, sans-serif;
+    float: right;
+    margin-right: 1em;
 }
 
 .send {
@@ -227,6 +229,8 @@ input {
 
 
 }
+
+.newsletter-wide {display: none}
 
 /*--- END OF BODY ---*/
 
@@ -268,48 +272,48 @@ footer {
     margin: auto 10px;
 }
 
+
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1415px) {
         .partner {
         height: 35%;
     }
-    
+
     .section-grid {
-    margin: 5%;
-    display: flex;
+    margin: 3em;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1em;
 }
     
-    .section-grid a {margin: auto;}
+    .article2 {width: 70%;}
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 679px) {
     * {max-width: 1023px;
     overflow-x: none;}
+    
+        .article2 {display: none}
+    
+    .newsletter-wide {display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 50px 0;}
+    
+    .newsletter-wide input {display: block;
+    width: 50%;
+    padding: 5px;}
     
         .section-grid {
     display: flex;
     flex-direction: column;
 }
     
-    .article1, .article2, .article3 {width: 600px; margin: 5% auto;}
+    .article1, .article2, .article3 {width: 400px; margin: 5% auto;}
     
     .logo {display: none;}
     
     .footer-logo {margin: 5px;}
-
-}
-
-@media screen and (max-width: 679px) {
-    * {max-width: 679px;
-    overflow-x: none;}
-    .partner {height: 23%;}
-    
-            .section-grid {
-    display: flex;
-    flex-direction: column;
-}
-    
-        .article1, .article2, .article3 {width: 90%;}
 
 }
