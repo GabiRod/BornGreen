@@ -217,6 +217,7 @@ header {
     grid-template-columns: 580px 580px;
     grid-template-rows: auto;
     justify-content: center;
+    margin: 2em;
 }
 
 .next {
@@ -274,6 +275,13 @@ footer {
 /* Responsive layout */
 
 @media screen and (max-width:1300px) {
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
     .progress-circle {
         width: 30px;
         height: 30px;
@@ -289,11 +297,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .back-next-buttons {
-        grid-template-columns: 400px 400px;
-    }
-}
+@media only screen and (max-width: 1024px) {}
 
 @media only screen and (max-width: 950px) {
     .progress-descriptions {
@@ -310,9 +314,6 @@ footer {
         align-self: center;
     }
 
-    .back-next-buttons {
-        grid-template-columns: 250px 250px;
-    }
 
     .item2 p:first-of-type {
         margin-top: 10%;
@@ -325,6 +326,13 @@ footer {
 }
 
 @media screen and (max-width: 679px) {
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
     .progress-descriptions {
         display: none;
     }

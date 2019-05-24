@@ -154,9 +154,10 @@ header {
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .back-next-buttons {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 585px 582px;
     grid-template-rows: auto;
     justify-content: center;
+    margin: 2em;
 }
 
 .send {
@@ -270,6 +271,14 @@ footer {
 /* Responsive layout */
 
 @media screen and (max-width: 1300px) {
+
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
     .progress-circle {
         width: 30px;
         height: 30px;
@@ -308,9 +317,7 @@ footer {
         width: 90%;
     }
 
-    .back-next-buttons {
-        grid-template-columns: 250px 250px;
-    }
+
 
     .progress-descriptions {
         display: none;
@@ -318,6 +325,14 @@ footer {
 }
 
 @media screen and (max-width: 679px) {
+
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
     .progress-descriptions {
         display: none;
     }

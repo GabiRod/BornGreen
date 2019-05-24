@@ -189,11 +189,14 @@ header {
 }
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
-.next-button {
+.back-next-button {
     display: grid;
-    grid-template-columns: 1160px;
+    grid-template-columns: 1170px;
+    justify-self: end;
     grid-template-rows: auto;
+    justify-self: end;
     justify-content: center;
+    margin: 2em;
 }
 
 .next {
@@ -243,6 +246,14 @@ footer {
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1300px) {
+
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
     .progress-descriptions {
         margin: 0 15%;
     }
@@ -251,9 +262,6 @@ footer {
         grid-column-gap: 20px;
     }
 
-    .next-button {
-        grid-template-columns: 1000px;
-    }
 
     .progress-circle {
         width: 30px;
@@ -268,6 +276,7 @@ footer {
     .progress-descriptions {
         margin: 0 13%;
     }
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -284,12 +293,6 @@ footer {
         justify-self: center;
     }
 
-    .next-button {
-        grid-template-columns: 660px;
-        margin-bottom: 4em;
-    }
-
-
 }
 
 @media screen and (max-width: 710px) {
@@ -298,12 +301,16 @@ footer {
         grid-column-gap: 5px;
     }
 
-    .next-button {
-        grid-template-columns: 645px;
-    }
 }
 
 @media screen and (max-width: 679px) {
+
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
 
     .progress-descriptions {
         display: none;
@@ -325,15 +332,9 @@ footer {
         width: 300px;
     }
 
-    .next-button {
-        grid-template-columns: 95%;
-    }
-
-
     footer {
         background-color: #517F37;
     }
-
 
 
 }

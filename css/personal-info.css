@@ -182,7 +182,7 @@ input {
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .back-next-buttons {
     display: grid;
-    grid-template-columns: 580px 580px;
+    grid-template-columns: 585px 585px;
     grid-template-rows: auto;
     justify-content: center;
     margin: 2em;
@@ -196,7 +196,7 @@ input {
 
 .section-grid {
     display: grid;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 585px 585px;
     grid-template-rows: auto;
     grid-column-gap: 8%;
     justify-content: center;
@@ -222,7 +222,7 @@ input {
 
 .back-next-buttons {
     display: grid;
-    grid-template-columns: 580px 580px;
+    grid-template-columns: 585px 585px;
     grid-template-rows: auto;
     justify-content: center;
 }
@@ -278,27 +278,34 @@ footer {
     .progress-descriptions {
         margin: 0 13%;
     }
+
+    .section-grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
 }
 
-.section-grid {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.back-next-buttons {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    justify-content: center;
-
-}
 
 /*-----responsivness--------*/
 
 @media screen and (max-width: 950px) {}
 
 @media screen and (max-width: 679px) {
+    .back-next-buttons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
     .progress-descriptions {
         display: none;
     }
