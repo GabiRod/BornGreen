@@ -135,8 +135,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 16%;
+    margin: 0 15.5%;
     margin-top: 20px;
+}
+
+.progress-description {
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 
@@ -271,15 +280,10 @@ footer {
 }
 
 
-@media screen and (max-width: 950px) {
-
-    .progress-descriptions {
-        display: none;
-    }
-}
+@media screen and (max-width: 950px) {}
 
 @media screen and (max-width: 679px) {
-    .footer-logo {
+    .progress-descriptions {
         display: none;
     }
 

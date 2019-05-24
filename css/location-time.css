@@ -136,7 +136,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 16%;
+    margin: 0 15.5%;
     margin-top: 20px;
 }
 
@@ -145,7 +145,10 @@ header {
     display: block;
     width: 200px;
     text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
+
 
 /* END OF PROGRESS BAR */
 
@@ -306,9 +309,10 @@ footer {
 }
 
 @media screen and (max-width: 679px) {
-    .footer-logo {
+    .progress-descriptions {
         display: none;
     }
+
 
     footer {
         background-color: #517F37;

@@ -329,9 +329,6 @@ footer {
         grid-template-columns: 95%;
     }
 
-    .footer-logo {
-        display: none;
-    }
 
     footer {
         background-color: #517F37;
