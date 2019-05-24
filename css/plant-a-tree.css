@@ -129,7 +129,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 16%;
+    margin: 0 15.5%;
     margin-top: 20px;
 }
 
@@ -138,7 +138,10 @@ header {
     display: block;
     width: 200px;
     text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
+
 
 /* END OF PROGRESS BAR */
 
@@ -238,3 +241,122 @@ footer {
 }
 
 /*--- END OF FOOTER ---*/
+
+@media screen and (max-width: 1300px) {
+    .progress-descriptions {
+        margin: 0 15%;
+    }
+
+    .trees {
+        grid-column-gap: 20px;
+    }
+
+    .next-button {
+        grid-template-columns: 1000px;
+    }
+
+    .progress-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .progress-circles {
+        margin: 0 20%;
+        margin-top: -20px;
+    }
+
+    .progress-descriptions {
+        margin: 0 13%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .trees {
+        grid-template-columns: 320px 320px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 20px;
+    }
+
+    .tree:last-of-type {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        width: 304px;
+        justify-self: center;
+    }
+
+    .next-button {
+        grid-template-columns: 660px;
+        margin-bottom: 4em;
+    }
+
+
+}
+
+@media screen and (max-width: 710px) {
+    .trees {
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+    }
+
+    .next-button {
+        grid-template-columns: 645px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+
+    .progress-descriptions {
+        display: none;
+    }
+
+    .trees {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tree {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+
+    .tree:last-of-type {
+        width: 300px;
+    }
+
+    .next-button {
+        grid-template-columns: 95%;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
+
+
+}
+
+@media screen and (max-width: 380px) {
+    tree-svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .trees {
+        width: 90%;
+        align-items: center;
+    }
+
+    .tree {
+        width: 97%;
+    }
+
+    .tree:last-of-type {
+        width: 100%;
+    }
+}

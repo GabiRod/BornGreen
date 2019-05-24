@@ -278,6 +278,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 679px) {
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
+}
+
 @media screen and (max-width: 530px) {
     input {
         width: 80%;

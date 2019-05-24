@@ -211,6 +211,10 @@ label {
     align-self: start;
 }
 
+.infoleft {
+    align-self: start;
+}
+
 #message {
     height: 15em;
 }
@@ -261,11 +265,21 @@ footer {
 
 
 /* Responsive layout */
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        grid-template-rows: auto;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .container {
         display: flex;
         flex-direction: column;
         align-content: center;
+
     }
 
     .inforight,
@@ -278,11 +292,25 @@ footer {
         grid-template-columns: 250px 250px;
     }
 
-    @media only screen and (max-width: 580px) {
-        .progress-descriptions {
-            display: none;
-        }
+    .progress-descriptions {
+        display: none;
+    }
+}
 
-        .back-next-buttons {
-            grid-template-columns: 200px 200px;
-        }
+@media screen and (max-width: 679px) {
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    .back-next-buttons {
+        grid-template-columns: 200px 200px;
+    }
+}

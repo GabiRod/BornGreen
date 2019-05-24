@@ -155,7 +155,7 @@ header {
 
 .item1 {
     grid-area: map;
-    width: 670px
+    width: 670px;
 }
 
 .item2 {
@@ -268,3 +268,66 @@ footer {
 }
 
 /*--- END OF FOOTER ---*/
+/* Responsive layout */
+
+@media only screen and (max-width: 1024px) {
+    .back-next-buttons {
+        grid-template-columns: 400px 400px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .progress-descriptions {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item1,
+    .item2 {
+        align-self: center;
+    }
+
+    .back-next-buttons {
+        grid-template-columns: 250px 250px;
+    }
+
+    .item2 p:first-of-type {
+        margin-top: 10%;
+    }
+
+    .item2 {
+        margin-bottom: 10%;
+        width: 78%;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .footer-logo {
+        display: none;
+    }
+
+    footer {
+        background-color: #517F37;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+
+    .back-next-buttons {
+        grid-template-columns: 200px 200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+
+    .back-next-buttons {
+        grid-template-columns: 150px 150px;
+    }
+}
