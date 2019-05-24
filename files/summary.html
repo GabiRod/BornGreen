@@ -11,7 +11,7 @@
     <link rel="icon" href="images/favicon.ico" />
 
 
-    <title>Order summary</title>
+    <title>BornGreen tree gift order summary</title>
 
 </head>
 
@@ -46,11 +46,99 @@
     <!--    end of HEADING     -->
 
     <h1>Summary of your order</h1>
+    <section class="container">
+        <div class="infoleft">
+            <div class="all">
+                <div class="txt">
+                    <label for="tree">Tree:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="typetree" name="tree" placeholder="Here you will see the tree">
+                </div>
+            </div>
 
-    <div class="back-next-buttons">
+            <div class="all">
+                <div class="txt">
+                    <label for="location">Location:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="locationtree" name="location" placeholder="Here you will see the location">
+                </div>
+            </div>
+
+            <div class="all">
+                <div class="txt">
+                    <label for="season">Season:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="seasontree" name="season" placeholder="Here you will see the month">
+                </div>
+            </div>
+
+            <div class="all">
+                <div class="txt">
+                    <label for="name">Your name:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="name" name="yourname" placeholder="Here you will see your name">
+                </div>
+            </div>
+
+            <div class="all">
+                <div class="txt">
+                    <label for="email">Email address:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="email" name="youremail" placeholder="Here you will see your email">
+                </div>
+            </div>
+
+            <div class="all">
+                <div class="txt">
+                    <label for="phone">Phone number:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="phone" name="phonenumber" placeholder="Here you will see your phone number">
+                </div>
+            </div>
+        </div>
+
+        <div class="inforight">
+            <div class="all">
+                <div class="txt">
+                    <label for="babyname">Baby's name:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="babyname" name="baby" placeholder="Here you will see the baby's name">
+                </div>
+            </div>
+
+            <div class="all">
+                <div class="txt">
+                    <label for="message">Personal message:</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="message" name="personalmessage" placeholder="Here you will see your personal message">
+                </div>
+            </div>
+            <br>
+            <p class="input-voucher">
+                <input type="radio" id="voucher" name="payment" value="Voucher"> Voucher 
+                <input type="text" id="code" class="input-input"  name="vouchercode" placeholder="VOUCHER CODE">
+            </p>
+            <br>
+             <p>
+                <input type="radio" id="online" name="payment" value="Voucher">Online payment
+            </p>
+        </div>
+         
+    </section>
+    
+<div class="back-next-buttons">
         <a class="back" href="personalInfo.html">BACK</a>
-        <a class="next" href="#">NEXT</a>
+        <a class="send" href="#">SUBMIT</a>
     </div>
+  
 
     <script href="../js/javascript.js"></script>
 </body>
