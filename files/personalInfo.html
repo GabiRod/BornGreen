@@ -54,16 +54,16 @@
                 <h2>Your personal information</h2>
 
                 Your name* <br>
-                <input class="first" type="text" name="" value="" placeholder="First">
-                <input class="last" type="text" name="" value="" placeholder="Last">
+                <input class="first" required type="text" name="" value="" placeholder="First">
+                <input class="last" type="text" name="" value="" placeholder="Last" required>
                 <br>
 
                 Email adress* <br>
-                <input class="email" type="text" name="" value="" placeholder="Your email adress...">
+                <input class="email" type="text" name="" value="" placeholder="Your email adress..." required>
                 <br>
 
                 Phone number* <br>
-                <input type="text" name="" value="" placeholder="Your phone number...">
+                <input type="text" name="" value="" placeholder="Your phone number..." required>
                 <br>
 
             </section>
@@ -74,18 +74,20 @@
 
                 Baby`s name <br>
 
-                <input class="first" type="text" name="First " value="" placeholder="First">
-                <input class="last" type="text" name="Last " value="" placeholder="Last">
+                <input class="first" type="text" name="First " value="" placeholder="First" required>
+                <input class="last" type="text" name="Last " value="" placeholder="Last" required>
                 <br>
 
                 Date of birth <br>
                 <input type="text" name="date of birth" placeholder="DD.MM.YYYY">
                 <br>
 
-                Personal message for baby <br>
+                Personal message for baby* <br>
 
                 <br>
-                <input style="height:200px;" type="text" name="date of birth" value="You can express your love in maximum 300 caracters">
+                <input style="height:200px;" type="text" name="date of birth" value="You can express your love in maximum 300 caracters" required>
+                <br>
+                *Field are required
 
             </section>
 
@@ -94,7 +96,7 @@
 
         <div class="back-next-buttons">
             <a class="back" href="locationAndTime.html">BACK</a>
-            <a class="next" name="nextbtn" href="summary.html">NEXT</a>
+            <a class="next" name="nextbtn" href="summary.html"> NEXT</a>
         </div>
     </form>
     <script src="../js/javascript.js"></script>

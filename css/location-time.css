@@ -273,6 +273,22 @@ footer {
 /*--- END OF FOOTER ---*/
 /* Responsive layout */
 
+@media screen and (max-width:1300px) {
+    .progress-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .progress-circles {
+        margin: 0 20%;
+        margin-top: -20px;
+    }
+
+    .progress-descriptions {
+        margin: 0 13%;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .back-next-buttons {
         grid-template-columns: 400px 400px;

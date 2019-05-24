@@ -264,21 +264,37 @@ footer {
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1300px) {
-    .section-grid {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+
+    .progress-circle {
+        width: 30px;
+        height: 30px;
     }
 
-    .back-next-buttons {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        justify-content: center;
+    .progress-circles {
+        margin: 0 20%;
+        margin-top: -20px;
+    }
 
+    .progress-descriptions {
+        margin: 0 13%;
     }
 }
 
+.section-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.back-next-buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-content: center;
+
+}
+
+/*-----responsivness--------*/
 
 @media screen and (max-width: 950px) {}
 
