@@ -17,10 +17,6 @@
 <body>
 
     <header>
-
-        <a href="../index.html">
-            <img class="logo-header" src="../images/logo_borngreen.svg" alt="Born Green"> </a>
-
         <!--     NAVIGATION     -->
         <nav class="menu">
 
@@ -31,7 +27,24 @@
             <a class="n" href="contact.html"> Contact </a>
 
         </nav>
+        <nav class="navbar-mobile">
+            <div id="menu-button" class="menu-button">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ol id="navbar-list" class="navbar-list">
+                <li><a href="plantTree.html"> Plant a tree </a></li>
+                <li><a href="learnGreen.html"> LearnGreen </a></li>
+                <li><a href="foundation.html"> Foundation </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ol>
+        </nav>
         <!--     NAVIGATION     -->
+        <a href="../index.html">
+            <img class="logo-header" src="../images/logo_borngreen.svg" alt="Born Green"> </a>
+
 
     </header>
     <h1>LearnGreen</h1>
@@ -92,16 +105,16 @@
         </div>
     </div>
 
-        <div class="newsletter-wide">
-            <h2>our newsletter</h2>
-            <br>
-            <p>Subscribe to our newsletter and learn about the climate change and what we can do to fight it!</p>
-            <br>
-            <br>
-            <input type="text" name="date of birth" placeholder="Write your email adress">
-            <br>
-            <a class="send" href="">SUBSCRIBE</a>
-        </div>
+    <div class="newsletter-wide">
+        <h2>our newsletter</h2>
+        <br>
+        <p>Subscribe to our newsletter and learn about the climate change and what we can do to fight it!</p>
+        <br>
+        <br>
+        <input type="text" name="date of birth" placeholder="Write your email adress">
+        <br>
+        <a class="send" href="">SUBSCRIBE</a>
+    </div>
 
 
 
@@ -128,7 +141,6 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-
     </script>
 
     <footer>

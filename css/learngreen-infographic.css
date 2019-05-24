@@ -79,7 +79,7 @@ header {
 
 
 /*--- START OF BODY ---*/
-.intro{
+.intro {
     margin: auto 20%;
 }
 
@@ -135,8 +135,9 @@ header {
     text-align: center;
     border-radius: 0.5em;
     background-color: #FAC240;
- 
+
 }
+
 .send {
     background-color: #d26123;
     color: white;
@@ -177,7 +178,8 @@ footer {
     left: 0.5em;
     max-height: 100px;
     width: 50px;
-    margin: 0.5em;}
+    margin: 0.5em;
+}
 
 .partners {
     display: flex;
@@ -190,80 +192,186 @@ footer {
     margin: auto 10px;
 }
 
+.navbar-mobile {
+    display: none;
+}
+
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1415px) {
-        .partner {
+    .partner {
         height: 35%;
     }
-    
+
     .container {
-    margin: 5%;
-}
-    
-    .container img {max-width: 100%;
+        margin: 5%;
+    }
+
+    .container img {
+        max-width: 100%;
         height: auto;
-}
-    
-    .section-grid a {margin: auto;}
+    }
+
+    .section-grid a {
+        margin: auto;
+    }
 }
 
-.intro{
+.intro {
     margin: auto 5%;
 }
 
 @media screen and (max-width: 1023px) {
-    * {max-width: 1023px;
-    overflow-x: none;}
-    
-        .section-grid {
-    display: flex;
-    flex-direction: column;
-}
-    
-    .subscribe {width: 600px; margin: 5% auto;}
-    
-    .logo {display: none;}
-    
-    .footer-logo {margin: 5px;}
+    * {
+        max-width: 1023px;
+        overflow-x: none;
+    }
 
+    .section-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe {
+        width: 600px;
+        margin: 5% auto;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .footer-logo {
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .navbar-mobile {
+        display: block;
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        cursor: pointer;
+        width: 55px;
+        border: none;
+        padding: 1em;
+        background-color: transparent;
+        margin-left: auto;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .menu-button.is-open .bar1 {
+        transform: rotate(-45deg) translate(-8px, 7px);
+    }
+
+    .menu-button.is-open .bar2 {
+        opacity: 0;
+    }
+
+    .menu-button.is-open .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .navbar-list {
+        list-style: none;
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        padding-left: 0;
+        display: none;
+        z-index: 2;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-list.is-open {
+        display: block;
+    }
+
+    .navbar-list li {
+        border-bottom: 1px solid black;
+    }
+
+    .navbar-list a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2em;
+        padding: 0.5rem;
+        margin: 0.5rem 1.5rem;
+        color: black;
+    }
+
+    /* End of Mobile Menu*/
 }
 
 @media screen and (max-width: 679px) {
-    * {max-width: 679px;
-    overflow-x: none;}
-    .partner {height: 23%;}
-    
-            .section-grid {
-    display: flex;
-    flex-direction: column;
-}
-    
-        .container {
-    display: flex;
-            justify-content: center;
-            flex-direction: column;
-}
-    
-            .container div {
-                margin: auto;
-}
-        .container img {width: 100%;
+    * {
+        max-width: 679px;
+        overflow-x: none;
+    }
+
+    .partner {
+        height: 23%;
+    }
+
+    .section-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container div {
+        margin: auto;
+    }
+
+    .container img {
+        width: 100%;
         height: auto;
-}
-    
-        .subscribe {display: none;}
-    
-    .newsletter-wide {display: block;
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-    padding: 50px 0;}
-    
-    .newsletter-wide input {display: block;
-    width: 50%;
-    padding: 5px;}
-    
-    .back {display: none;}
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .newsletter-wide {
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 50px 0;
+    }
+
+    .newsletter-wide input {
+        display: block;
+        width: 50%;
+        padding: 5px;
+    }
+
+    .back {
+        display: none;
+    }
 
 }
