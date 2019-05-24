@@ -246,14 +246,16 @@ footer {
     height: 7em;
     display: flex;
     justify-content: center;
+
 }
 
 .footer-logo {
-    width: 45px;
     height: auto;
     position: absolute;
     left: 0.5em;
-}
+    max-height: 100px;
+    width: 50px;
+    margin: 0.5em;}
 
 .partners {
     display: flex;
@@ -263,8 +265,51 @@ footer {
 
 .partner {
     height: 50px;
-    width: auto;
     margin: auto 10px;
 }
 
 /*--- END OF FOOTER ---*/
+
+@media screen and (max-width: 1415px) {
+        .partner {
+        height: 35%;
+    }
+    
+    .section-grid {
+    margin: 5%;
+    display: flex;
+}
+    
+    .section-grid a {margin: auto;}
+}
+
+@media screen and (max-width: 1023px) {
+    * {max-width: 1023px;
+    overflow-x: none;}
+    
+        .section-grid {
+    display: flex;
+    flex-direction: column;
+}
+    
+    .article1, .article2, .article3 {width: 600px; margin: 5% auto;}
+    
+    .logo {display: none;}
+    
+    .footer-logo {margin: 5px;}
+
+}
+
+@media screen and (max-width: 679px) {
+    * {max-width: 679px;
+    overflow-x: none;}
+    .partner {height: 23%;}
+    
+            .section-grid {
+    display: flex;
+    flex-direction: column;
+}
+    
+        .article1, .article2, .article3 {width: 90%;}
+
+}
