@@ -101,8 +101,6 @@ header {
 
 /* START OF PROGRESS BAR */
 
-
-
 .progress-line {
     height: 10px;
     width: 100%;
@@ -159,6 +157,7 @@ header {
     border-radius: 0.7em;
     border-bottom: 5px solid #E4B13B;
     border-left: 5px solid #E4B13B;
+    cursor: pointer;
 }
 
 .tree p {
@@ -186,6 +185,12 @@ header {
 
 .name-price p {
     margin-top: auto;
+}
+
+.tree-selected {
+    border-bottom: 5px solid #5A913D;
+    border-left: 5px solid #5A913D;
+    background-color: #5A913D;
 }
 
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
