@@ -85,6 +85,21 @@ header {
     display: none;
 }
 
+.social-media-fixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-fixed img {
+    width: 80px;
+    height: 80px;
+    margin: 0.5em 0;
+}
+
 .add-root {
     position: relative;
 }
@@ -492,6 +507,10 @@ header {
     .titleImage-mobile {
         display: block;
         width: 100%;
+    }
+
+    .social-media-fixed {
+        display: none;
     }
 
     .process-grid {

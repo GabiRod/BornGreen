@@ -51,26 +51,24 @@ header {
 }
 
 .logo-header {
-    height: 3.5em;
+    height: 3em;
     width: auto;
     position: absolute;
     top: 0.7em;
-    left: 4em;
+    left: 1em;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
-    padding-right: 4em;
+    padding-right: 1em;
 }
 
 .n {
     color: white;
     text-decoration: none;
-    margin: 0.3em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 40px;
+    margin: 0.5em;
+    font-size: 35px;
 }
 
 .navbar-mobile {
