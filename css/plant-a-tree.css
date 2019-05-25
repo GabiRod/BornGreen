@@ -197,6 +197,7 @@ header {
 .back-next-button {
     display: grid;
     grid-template-columns: 1170px;
+
     justify-self: end;
     grid-template-rows: auto;
     justify-self: end;
@@ -252,7 +253,7 @@ footer {
 
 @media screen and (max-width: 1300px) {
 
-    .back-next-buttons {
+    .back-next-button {
         display: grid;
         grid-template-columns: 80%;
         grid-template-rows: auto;
@@ -310,7 +311,7 @@ footer {
 
 @media screen and (max-width: 679px) {
 
-    .back-next-buttons {
+    .back-next-button {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
