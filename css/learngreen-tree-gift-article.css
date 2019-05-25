@@ -302,6 +302,12 @@ footer {
         max-width: 679px;
         overflow-x: none;
     }
+    
+    .article-container, .article1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 
     .partner {
         height: 23%;
@@ -326,6 +332,11 @@ footer {
         padding: 5px;
     }
 
+            .newsletter-wide p {
+        width: 90%;
+            margin: auto;
+    }
+    
     .back {
         display: none;
     }
