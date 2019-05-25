@@ -141,17 +141,31 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
+
     </script>
 
-    <footer>
+    <footer class="footer">
+        <a href="#" class="footer-logo">
+            <img src="../images/logo.svg" alt="logo">
+        </a>
+        <div class="footer-first">
+            <div class="footer-some-icons">
+                <a href="https://www.facebook.com/BornGreen.dk" target="_blank" rel="noreferrer"><img src="../images/facebook-logo-transparent.svg" alt="logo"></a>
+                <a href="https://www.instagram.com/borngreen.dk" target="_blank" rel="noreferrer"><img src="../images/instagram-logo-transparent.svg" alt="logo"></a>
+            </div>
+        </div>
         <div class="partners">
-            <img class="footer-logo partner" src="../images/logo.svg" alt="Born Green">
-            <img class="partner" src="../images/partners/logo-naturstyrelsen.png" alt="Naturstyrelsen partner">
-            <img class="partner" src="../images/partners/logo-aarhuskommune.png" alt="Aarhus Kommune partner">
-            <img class="partner" src="../images/partners/logo-planteskole.gif" alt="Aarestrup Planteskole partner">
+            <a class="partner" href="https://naturstyrelsen.dk" target="_blank" rel="noreferrer">
+                <img class="partner-img" src="../images/partners/logo-naturstyrelsen.png" alt="Naturstyrelsen partner">
+            </a>
+            <a class="partner" href="https://aarhus.dk" target="_blank" rel="noreferrer">
+                <img class="partner-img" src="../images/partners/logo-aarhuskommune.png" alt="Aarhus Kommune partner">
+            </a>
+            <a class="partner" href="https://www.skovplanter.dk" target="_blank" rel="noreferrer">
+                <img class="partner-img" src="../images/partners/logo-planteskole.gif" alt="Aarestrup Planteskole partner">
+            </a>
         </div>
     </footer>
-
 
     <script src="../js/javascript.js"></script>
 </body>

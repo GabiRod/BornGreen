@@ -19,7 +19,7 @@ h3 {
 h1 {
     font-size: 60px;
     text-align: center;
-    margin-top: 0;
+    margin-top: 0.5em;
 }
 
 h2 {
@@ -72,6 +72,7 @@ header {
 /*--- START OF BODY ---*/
 
 .titleImage {
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -200,7 +201,9 @@ header {
 
 /*--- START OF FOOTER ---*/
 
-footer {
+/* copy 1 start !!!!!! */
+
+.footer {
     background-color: #5a913d;
     height: 7em;
     display: flex;
@@ -216,17 +219,33 @@ footer {
     bottom: 1.2em;
 }
 
+.footer-first {
+    display: none;
+}
+
+.footer-some-icons {
+    display: none;
+}
+
 .partners {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 
 .partner {
+    width: auto;
     height: 45px;
+}
+
+.partner-img {
+    height: 100%;
     width: auto;
     margin: auto 15px;
 }
+
+/* copy 1 end !!!!!! */
 
 /*--- END OF FOOTER ---*/
 
@@ -294,9 +313,12 @@ footer {
         width: 12em;
     }
 
+    /* copy 2 start !!!!!! */
     .partner {
         height: 25%;
     }
+
+    /* copy 2 end !!!!!! */
 }
 
 @media screen and (max-width: 1120px) {
@@ -306,6 +328,15 @@ footer {
 }
 
 @media screen and (max-width: 1023px) {
+    .titleImage {
+        display: none;
+    }
+
+    .titleImage-tablet {
+        display: block;
+        width: 100%;
+    }
+
     .process-grid {
         grid-column-gap: 3em;
         grid-row-gap: 1em;
@@ -370,8 +401,8 @@ footer {
     /* Start of Mobile Menu*/
 
     .navbar-mobile {
-    position: relative;
-}
+        position: relative;
+    }
 
     .menu {
         display: none;
@@ -443,7 +474,25 @@ footer {
 
 }
 
+@media screen and (max-width: 800px) {
+
+    /* copy 3 start !!!!!! */
+    .partner {
+        height: 20%;
+    }
+
+    /* copy 3 end !!!!!! */
+}
+
 @media screen and (max-width: 679px) {
+    .titleImage-tablet {
+        display: none;
+    }
+
+    .titleImage-mobile {
+        display: block;
+        width: 100%;
+    }
 
     .process-grid {
         display: flex;
@@ -522,13 +571,72 @@ footer {
         margin: 0;
     }
 
-    .footer-logo {
-        display: none;
-    }
+    /* copy 4 start !!!!!! */
 
-    footer {
+
+
+    .footer {
         background-color: #517F37;
+        height: 12em;
+        display: flex;
+        flex-direction: column;
     }
 
+    .footer-logo {
+        bottom: 6.6em;
+    }
+
+    .footer-first {
+        display: block;
+        background-color: #5A913D;
+        height: 50%;
+        width: 100%;
+    }
+
+    .footer-some-icons {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 0.5em;
+    }
+
+    .footer-some-icons a {
+        padding: 0.5em;
+        margin-left: 1em;
+    }
+
+    .footer-some-icons img {
+        height: 40px;
+        width: auto;
+    }
+
+    .partners {
+        justify-content: space-between;
+        height: 50%;
+        width: 100%;
+    }
+
+    .partner {
+        height: 25%;
+    }
+
+    /* copy 4 end !!!!!! */
 
 }
+
+/* copy 5 start !!!!!! */
+@media screen and (max-width: 510px) {
+    .partner {
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .partner {
+        height: 12%;
+    }
+}
+
+/* copy 5 end !!!!!! */
