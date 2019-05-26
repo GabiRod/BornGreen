@@ -48,26 +48,24 @@ header {
 
 .logo-header {
 
-    height: 3.5em;
+    height: 3em;
     width: auto;
     position: absolute;
     top: 0.7em;
-    left: 4em;
+    left: 1em;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
-    padding-right: 4em;
+    padding-right: 1em;
 }
 
 .n {
     color: white;
     text-decoration: none;
-    margin: 0.3em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 40px;
+    margin: 0.5em;
+    font-size: 35px;
 }
 
 .navbar-mobile {
@@ -81,6 +79,22 @@ header {
 
 
 /*--- START OF BODY ---*/
+
+.social-media-fixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-fixed img {
+    width: 80px;
+    height: 80px;
+    margin: 0.5em 0;
+}
+
 .article-container {
     margin-left: auto;
     margin-right: auto;
@@ -327,16 +341,16 @@ input {
 }
 
 @media screen and (max-width: 679px) {
-    * {
-        max-width: 679px;
-        overflow-x: none;
+    .social-media-fixed {
+        display: none;
     }
-    
-    .article-container, .article1 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
+
+    .article-container,
+    .article1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
 
     .subscribe {
         display: none;
@@ -356,11 +370,11 @@ input {
         padding: 5px;
     }
 
-            .newsletter-wide p {
+    .newsletter-wide p {
         width: 90%;
-            margin: auto;
+        margin: auto;
     }
-    
+
     .back {
         display: none;
     }
