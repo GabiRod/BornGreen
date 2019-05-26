@@ -25,3 +25,20 @@ if (trees.length) {
         }, false);
     });
 }
+
+/* add hover on buttons */
+const buttons = document.querySelectorAll(".button-hover");
+
+if (buttons.length) {
+    buttons.forEach(function (button) {
+        button.addEventListener('mouseover', function () {
+            button.style.background = "#BF592E";
+        });
+    });
+
+    buttons.forEach(function (button) {
+        button.addEventListener('mouseout', function () {
+            button.style.background = "#D26132";
+        });
+    });
+}
