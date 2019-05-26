@@ -42,3 +42,46 @@ if (buttons.length) {
         });
     });
 }
+
+/* Progress bar element. */
+const progressBar = document.getElementById('progressbar');
+
+/* Progress bar steps. */
+const circles = document.querySelectorAll('.progress-circle');
+
+/* Check if progress bar exists. */
+if (progressBar) {
+    /* Current progress (data-final-value in HTML). */
+    const finalValue = progressBar.dataset.finalValue;
+
+    /* Calculate current step based on number of steps and current progress. */
+    const currentStep = finalValue / (100 / (circles.length + 1));
+
+    /* Fill all completed steps */
+    for (let i = 0; i < (currentStep - 1); i++) {
+        circles[i].classList.add('circle-filled');
+    }
+
+    /* Animate progress bar to current step. */
+    TweenMax.to(progressBar, 2, {
+        value: finalValue,
+        ease: Power2.easeInOut,
+
+        /* 
+        Callback function (will be called when animation is complete).
+        https://greensock.com/docs/TweenMax/static.to
+        */
+        onComplete: fillNextCircle,
+
+        /*
+            Parameters which will be passed to the callback function. https://greensock.com/forums/topic/14612-pass-a-function-to-oncomplete-with-parameter-without-invoking-it/
+        */
+        onCompleteParams: [currentStep]
+    });
+}
+
+/* Fill current step when TweenMax animation is complete. */
+function fillNextCircle(step) {
+    const nextCircle = circles[step - 1];
+    nextCircle.classList.add('circle-filled');
+}

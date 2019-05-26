@@ -28,21 +28,17 @@
         </a>
 
     </header>
+    <!-- Start of progress bar -->
     <section class="progress">
-        <div class="progress-line"></div>
+        <progress class="progress-line" data-final-value="80" id="progressbar" value="60" max="100"></progress>
         <div class="progress-circles">
-            <div class="progress-circle"></div>
-            <div class="progress-circle"></div>
-            <div class="progress-circle"></div>
-            <div class="progress-circle"></div>
-        </div>
-        <div class="progress-descriptions">
-            <div class="progress-description">choose your tree</div>
-            <div class="progress-description">location and time</div>
-            <div class="progress-description">personal information</div>
-            <div class="progress-description">summary</div>
+            <div class="progress-circle" title="Choose your tree"></div>
+            <div class="progress-circle" title="Location and time"></div>
+            <div class="progress-circle" title="personal information"></div>
+            <div class="progress-circle" title="Summary"></div>
         </div>
     </section>
+    <!-- End of progress bar -->
     <!--    end of HEADING     -->
 
     <h1>Summary of your order</h1>
@@ -147,8 +143,7 @@
         <a class="back button-hover" href="personalInfo.html">BACK</a>
         <a class="send button-hover" href="#">SUBMIT</a>
     </div>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="../js/javascript.js"></script>
 </body>
 

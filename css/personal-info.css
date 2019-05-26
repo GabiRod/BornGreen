@@ -107,19 +107,31 @@ header {
 
 /* START OF PROGRESS BAR */
 
-
+.progress {
+    margin-bottom: 4rem;
+}
 
 .progress-line {
+    appearance: none;
+    -webkit-appearance: none;
     height: 10px;
     width: 100%;
+    display: block;
+}
+
+.progress-line::-webkit-progress-bar {
     background-color: #FDEECA;
+}
+
+.progress-line::-webkit-progress-value {
+    background-color: #FAC240;
 }
 
 .progress-circles {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 20%;
+    margin: 0 18%;
     margin-top: -27px;
 }
 
@@ -128,26 +140,26 @@ header {
     height: 44px;
     border-radius: 70%;
     background-color: #FDEECA;
+    position: relative;
+    transition: background-color 500ms ease;
 
 }
 
-.progress-descriptions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 15.5%;
-    margin-top: 20px;
+.circle-filled {
+    background-color: #FAC240;
 }
 
-.progress-description {
-    text-transform: uppercase;
+.progress-circle::after {
+    content: attr(title);
     display: block;
-    width: 200px;
-    text-align: center;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: max-content;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    margin-top: 0.8rem;
 }
-
 
 /* END OF PROGRESS BAR */
 
@@ -270,12 +282,7 @@ footer {
     }
 
     .progress-circles {
-        margin: 0 20%;
         margin-top: -20px;
-    }
-
-    .progress-descriptions {
-        margin: 0 13%;
     }
 
     .section-grid {
@@ -295,7 +302,11 @@ footer {
 
 /*-----responsivness--------*/
 
-@media screen and (max-width: 950px) {}
+@media screen and (max-width: 950px) {
+    .progress-circle::after {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 679px) {
     .back-next-buttons {
