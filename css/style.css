@@ -104,13 +104,16 @@ header {
     position: relative;
 }
 
-.add-root::after {
-    content: url(../images/homepage/root-1.svg);
+.root1 {
     width: 50em;
     height: auto;
     position: absolute;
     top: 650px;
     left: 308px;
+}
+
+.root1-medium {
+    display: none;
 }
 
 .main-tree {
@@ -162,8 +165,7 @@ header {
     position: relative;
 }
 
-.add-root-2::before {
-    content: url(../images/homepage/root-2.svg);
+.root2 {
     width: 50em;
     height: auto;
     position: absolute;
@@ -171,12 +173,15 @@ header {
     left: 300px;
 }
 
+.root2-medium {
+    display: none;
+}
+
 .add-root-3 {
     position: relative;
 }
 
-.add-root-3::after {
-    content: url(../images/homepage/root-3.svg);
+.root3 {
     width: 38em;
     height: auto;
     position: absolute;
@@ -184,17 +189,25 @@ header {
     right: 340px;
 }
 
+.root3-medium {
+    display: none;
+}
+
 .add-root-4 {
     position: relative;
 }
 
-.add-root-4::before {
-    content: url(../images/homepage/root-4.svg);
+.root4 {
     width: 28em;
     height: auto;
     position: absolute;
     top: -80px;
     left: 600px;
+}
+
+.root4-medium,
+.root4-small {
+    display: none;
 }
 
 .start-btn {
@@ -266,26 +279,49 @@ header {
 
 /*-------------------------responsivness-------------------------*/
 @media screen and (max-width: 1820px) {
-    .add-root::after {
-        content: url(../images/homepage/root-1-medium.svg);
+    .root1 {
+        display: none;
+    }
+
+    .root1-medium {
+        display: block;
+        position: absolute;
         width: 30em;
         top: 651px;
+        left: 308px;
     }
 
+    .root2 {
+        display: none;
+    }
 
-    .add-root-2::before {
-        content: url(../images/homepage/root-2-medium.svg);
+    .root2-medium {
+        display: block;
+        position: absolute;
         width: 37em;
         left: 200px;
+        top: -100px;
     }
 
-    .add-root-3::after {
-        content: url(../images/homepage/root-3-medium.svg);
+    .root3 {
+        display: none;
+    }
+
+    .root3-medium {
+        display: block;
+        position: absolute;
+        top: -60px;
+        right: 340px;
         width: 26em;
     }
 
-    .add-root-4::before {
-        content: url(../images/homepage/root-4-medium.svg);
+    .root4 {
+        display: none;
+    }
+
+    .root4-medium {
+        display: block;
+        position: absolute;
         width: 20em;
         top: -50px;
         left: 500px;
@@ -321,8 +357,13 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
-    .add-root-4::before {
-        content: url(../images/homepage/root-4-small.svg);
+    .root4-medium {
+        display: none;
+    }
+
+    .root4-small {
+        display: block;
+        position: absolute;
         top: -50px;
         left: 450px;
         width: 12em;
@@ -388,20 +429,20 @@ header {
         justify-self: center;
     }
 
-    .add-root::after {
+    .root1-medium {
         display: none;
     }
 
 
-    .add-root-2::before {
+    .root2-medium {
         display: none;
     }
 
-    .add-root-3::after {
+    .root3-medium {
         display: none;
     }
 
-    .add-root-4::before {
+    .root4-small {
         display: none;
     }
 
