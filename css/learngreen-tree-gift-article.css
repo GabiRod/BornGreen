@@ -152,17 +152,19 @@ header {
 }
 
 .send {
+    display: block;
     background-color: #d26123;
     color: white;
-    width: 70px;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 0.3em;
-    padding: 0.1em 1.1em;
+    padding: 0.2em 1.1em;
     border-bottom: 5px solid #BF592E;
     border-left: 5px solid #BF592E;
+    border-top: none;
+    border-right: none;
+    font-size: 30px;
     font-family: Amatic SC, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {
