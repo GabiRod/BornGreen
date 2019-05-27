@@ -111,8 +111,8 @@ header {
 
     text-align: center;
     float: right;
-    width: 1em;
-    height: auto;
+    width: 1.5em;
+    height: 1.5em;
     font-size: 1em;
     padding: 5px;
     color: #5a913d;
@@ -175,7 +175,7 @@ header {
 }
 
 .popup .close:hover {
-    color: #06D85F;
+    color: #5a913d;
 }
 
 .popup .content {
