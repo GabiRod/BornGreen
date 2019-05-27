@@ -58,11 +58,11 @@ header {
 }
 
 .logo-header {
-    height: 3.5em;
+    height: 3em;
     width: auto;
     position: absolute;
     top: 0.7em;
-    left: 4em;
+    left: 1em;
 }
 
 .n {
@@ -81,7 +81,7 @@ header {
     height: 55px;
     padding: 0.7em;
     margin-left: auto;
-    margin-right: 3.3em;
+    margin-right: 1em;
 }
 
 .close-btn-line1 {
