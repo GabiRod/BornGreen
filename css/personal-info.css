@@ -104,6 +104,89 @@ header {
 /*--- END OF HEADER ---*/
 
 
+/* pop up window*/
+
+
+.button {
+    text-align: center;
+    float: right;
+    width: 1em;
+    height: auto;
+    font-size: 1em;
+    padding: 5px;
+    color: #5a913d;
+    border: 2px solid #5a913d;
+    border-radius: 70%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+}
+
+.button:hover {
+    background: #5a913d;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    text-align: center;
+    margin: 70px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+
+
+/* end of pop up window*/
+
+
 
 /* START OF PROGRESS BAR */
 
