@@ -266,8 +266,6 @@ footer {
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1300px) {
-    /* Start copy 1  */
-
     .progress-circle {
         width: 30px;
         height: 30px;
@@ -277,7 +275,6 @@ footer {
         margin-top: -20px;
     }
 
-    /* End copy 1  */
 
     .back-next-button {
         display: grid;
@@ -308,14 +305,11 @@ footer {
 
 }
 
-/* Start copy 2  */
 @media screen and (max-width: 950px) {
     .progress-circle::after {
         display: none;
     }
 }
-
-/* End copy 2  */
 
 @media screen and (max-width: 710px) {
     .trees {
@@ -373,6 +367,6 @@ footer {
     }
 
     .tree:last-of-type {
-        width: 100%;
+        width: 97%;
     }
 }
