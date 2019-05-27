@@ -7,7 +7,6 @@ body {
 
 p {
     font-size: 17px;
-
 }
 
 h1,
@@ -37,9 +36,7 @@ a {
 
 /*--- OVERAL STYLING ---*/
 
-
 /*--- START OF HEADER ---*/
-
 header {
     background-color: #5a913d;
     font-family: Amatic SC, sans-serif;
@@ -74,12 +71,7 @@ header {
 
 /*--- END OF HEADER ---*/
 
-
-
-
-
 /*--- START OF BODY ---*/
-
 .social-media-fixed {
     position: fixed;
     top: 50%;
@@ -178,10 +170,7 @@ header {
 
 /*--- END OF BODY ---*/
 
-
-
 /*--- START OF FOOTER ---*/
-
 .footer {
     background-color: #5a913d;
     height: 7em;
@@ -233,7 +222,6 @@ header {
 }
 
 @media screen and (max-width: 1023px) {
-
     .logo {
         display: none;
     }
@@ -241,8 +229,6 @@ header {
     .hands {
         margin: auto;
     }
-
-
 
     .photo-grid {
         grid-template-columns: 200px 200px;
@@ -260,7 +246,6 @@ header {
 }
 
 @media screen and (max-width: 950px) {
-
     .navbar-mobile {
         display: block;
         position: relative;
@@ -331,9 +316,6 @@ header {
         margin: 0.5rem 1.5rem;
         color: black;
     }
-
-    /* End of Mobile Menu*/
-
 }
 
 @media screen and (max-width: 800px) {
@@ -351,7 +333,6 @@ header {
     .logo {
         display: none;
     }
-
 
     .xs {
         display: block;
@@ -424,8 +405,6 @@ header {
     .partner {
         height: 25%;
     }
-
-
 }
 
 @media screen and (max-width: 510px) {
