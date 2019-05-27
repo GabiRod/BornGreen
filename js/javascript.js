@@ -89,7 +89,6 @@ function fillNextCircle(step) {
 
 /* slideshow on learn green */
 var slideIndex = 0;
-showSlides();
 
 function showSlides() {
     var i;
@@ -109,3 +108,194 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
+
+if (document.getElementsByClassName("mySlides").length) {
+    showSlides();
+}
+
+/* animation of roots
+We used an example from scrollmagic documentation -> https://scrollmagic.io/examples/advanced/svg_drawing.html and modified it to fit our needs.
+*/
+function pathPrepare(path) {
+    const lineLength = path.getTotalLength();
+
+    path.style.strokeDasharray = lineLength;
+    path.style.strokeDashoffset = lineLength;
+}
+
+const rootOne = document.getElementById('rootOne');
+const rootOneMedium = document.getElementById('rootOneMedium');
+const rootTwo = document.getElementById('rootTwo');
+const rootTwoMedium = document.getElementById('rootTwoMedium');
+const rootThree = document.getElementById('rootThree');
+const rootThreeMedium = document.getElementById('rootThreeMedium');
+const rootFour = document.getElementById('rootFour');
+const rootFourMedium = document.getElementById('rootFourMedium');
+const rootFourSmall = document.getElementById('rootFourSmall');
+
+// prepare SVG
+pathPrepare(rootOne);
+pathPrepare(rootOneMedium);
+pathPrepare(rootTwo);
+pathPrepare(rootTwoMedium);
+pathPrepare(rootThree);
+pathPrepare(rootThreeMedium);
+pathPrepare(rootFour);
+pathPrepare(rootFourMedium);
+pathPrepare(rootFourSmall);
+
+// init controller
+const controller = new ScrollMagic.Controller();
+
+// build tween1
+const tween = new TimelineMax()
+    .add(TweenMax.to(rootOne, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene
+const scene = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing1",
+        duration: 600,
+        tweenChanges: true
+    })
+    .setTween(tween)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween11
+const tween11 = new TimelineMax()
+    .add(TweenMax.to(rootOneMedium, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene11
+const scene11 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing1",
+        duration: 600,
+        tweenChanges: true
+    })
+    .setTween(tween11)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween2
+const tween2 = new TimelineMax()
+    .add(TweenMax.to(rootTwo, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene2
+const scene2 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing2",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween2)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween22
+const tween22 = new TimelineMax()
+    .add(TweenMax.to(rootTwoMedium, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene22
+const scene22 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing2",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween22)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween3
+const tween3 = new TimelineMax()
+    .add(TweenMax.to(rootThree, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene3
+const scene3 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing3",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween3)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween33
+const tween33 = new TimelineMax()
+    .add(TweenMax.to(rootThreeMedium, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene33
+const scene33 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing3",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween33)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween4
+const tween4 = new TimelineMax()
+    .add(TweenMax.to(rootFour, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene4
+const scene4 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing4",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween4)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween44
+const tween44 = new TimelineMax()
+    .add(TweenMax.to(rootFourMedium, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene44
+const scene44 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing4",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween44)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+// build tween444
+const tween444 = new TimelineMax()
+    .add(TweenMax.to(rootFourSmall, 0.9, {
+        strokeDashoffset: 0,
+        ease: Linear.easeNone
+    })) // draw word for 0.9
+
+// build scene444
+const scene444 = new ScrollMagic.Scene({
+        triggerElement: ".svg-drawing4",
+        duration: 400,
+        tweenChanges: true
+    })
+    .setTween(tween444)
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
