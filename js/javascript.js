@@ -161,7 +161,6 @@ const scene = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween11
@@ -178,7 +177,6 @@ const scene11 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween11)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween2
@@ -195,7 +193,6 @@ const scene2 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween2)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween22
@@ -212,7 +209,6 @@ const scene22 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween22)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween3
@@ -229,7 +225,6 @@ const scene3 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween3)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween33
@@ -246,7 +241,6 @@ const scene33 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween33)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween4
@@ -263,7 +257,6 @@ const scene4 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween4)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween44
@@ -280,7 +273,6 @@ const scene44 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween44)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 // build tween444
@@ -297,5 +289,4 @@ const scene444 = new ScrollMagic.Scene({
         tweenChanges: true
     })
     .setTween(tween444)
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
