@@ -413,6 +413,37 @@ header {
     }
 }
 
+@media screen and (max-width: 465px) {
+
+    .section-grid,
+    .section-grid2 {
+        margin: 0;
+    }
+
+    .photo-grid {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .foto {
+        height: auto;
+        width: 90%;
+    }
+
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4 {
+        height: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
 @media screen and (max-width: 430px) {
     .partner {
         height: 12%;
