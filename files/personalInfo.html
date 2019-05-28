@@ -39,16 +39,7 @@
     </section>
     <!-- End of progress bar -->
     <!--    end of HEADING     -->
-
-
-
     <h1> Add your personal information</h1>
-
-
-    <div class="box">
-        <a class="button" href="#popup1">?</a>
-    </div>
-
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>What are we going to do with your personal data?</h2>
@@ -58,62 +49,43 @@
             </div>
         </div>
     </div>
-
-
-    <form action="../js/javascript.js">
-
-        <section class="section-grid">
-
-            <section>
-
-                <h2>Your personal information</h2>
-
-                Your name* <br>
-                <input class="first" required type="text" name="first" value="" placeholder="First">
-                <input class="last" type="text" name="last" value="" placeholder="Last" required>
-                <br>
-
-                Email adress* <br>
-                <input class="email" type="text" name="email" value="" placeholder="Your email adress..." required>
-                <br>
-
-                Phone number* <br>
-                <input type="text" name="number" value="" placeholder="Your phone number..." required>
-                <br>
-
-            </section>
-
-            <section>
-
-                <h2>Baby's personal information</h2>
-
-                Baby`s name <br>
-
-                <input class="first" type="text" name="First " value="" placeholder="First" required>
-                <input class="last" type="text" name="Last " value="" placeholder="Last" required>
-                <br>
-
-                Date of birth <br>
-                <input type="text" name="date of birth" placeholder="DD.MM.YYYY">
-                <br>
-
-                Personal message for baby* <br>
-
-                <br>
-                <input style="height:200px;" type="text" name="date of birth" value="You can express your love in maximum 300 caracters" required>
-                <br>
-                *Field are required
-
-            </section>
-
+    <section class="section-grid">
+        <section>
+            <h2>Your personal information</h2>
+            Your name* <br>
+            <input class="first" required type="text" name="first" value="" placeholder="First">
+            <input class="last" type="text" name="last" value="" placeholder="Last" required>
+            <br>
+            Email adress* <br>
+            <input class="email" type="text" name="email" value="" placeholder="Your email adress..." required>
+            <br>
+            Phone number* <br>
+            <input type="text" name="number" value="" placeholder="Your phone number..." required>
+            <br>
         </section>
-
-
-        <div class="back-next-buttons">
-            <a class="back button-hover" href="locationAndTime.html">BACK</a>
-            <a class="next button-hover" name="nextbtn" href="summary.html"> NEXT</a>
-        </div>
-    </form>
+        <section>
+            <h2>Baby's personal information</h2>
+            Baby`s name <br>
+            <input class="first" type="text" name="First " value="" placeholder="First" required>
+            <input class="last" type="text" name="Last " value="" placeholder="Last" required>
+            <br>
+            Date of birth <br>
+            <input type="text" name="date of birth" placeholder="DD.MM.YYYY">
+            <br>
+            Personal message for baby* <br>
+            <br>
+            <input style="height:200px;" type="text" name="date of birth" value="You can express your love in maximum 300 caracters" required>
+            <br>
+            *Field are required
+            <div class="box">
+                <a class="button-gdpr" href="#popup1">?</a>
+            </div>
+        </section>
+    </section>
+    <div class="back-next-buttons">
+        <a class="back button-hover" href="locationAndTime.html">BACK</a>
+        <a class="next button-hover" name="nextbtn" href="summary.html"> NEXT</a>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="../js/javascript.js"></script>
 </body>
