@@ -107,10 +107,9 @@ header {
 /* pop up window*/
 
 
-.button {
-
+.button-gdpr {
     text-align: center;
-    float: right;
+    display: block;
     width: 1.5em;
     height: 1.5em;
     font-size: 1em;
@@ -121,10 +120,11 @@ header {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    margin-top: 0.5rem;
 
 }
 
-.button:hover {
+.button-gdpr:hover {
     background: #5a913d;
     color: #fff;
 }
