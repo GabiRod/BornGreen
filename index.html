@@ -43,9 +43,14 @@
             <img class="logo-header" src="images/logo_borngreen.svg" alt="Born Green">
         </a>
     </header>
-    <img class="titleImage" src="images/homepage/banner-desktop.jpg" alt="">
+    <picture>
+        <source class="titleImage" srcset="images/homepage/banner-desktop.jpg" media="(min-width: 1024px)" type="image/jpeg">
+        <source class="titleImage" srcset="images/homepage/banner-tablet.jpg" media="(min-width: 698px)" type="image/jpeg">
+        <img class="titleImage" src="images/homepage/banner-mobile.jpg" alt="" />
+    </picture>
+    <!--    <img class="titleImage" src="images/homepage/banner-desktop.jpg" alt="">
     <img class="titleImage-tablet" src="images/homepage/banner-tablet.jpg" alt="">
-    <img class="titleImage-mobile" src="images/homepage/banner-mobile.jpg" alt="">
+    <img class="titleImage-mobile" src="images/homepage/banner-mobile.jpg" alt="">-->
     <!-- Start Social Media Icons -->
     <div class="social-media-fixed">
         <a class="icon-fixed" href="https://www.facebook.com/BornGreen.dk" target="_blank" rel="noreferrer"><img src="images/facebook-logo.svg" alt="Facebook"></a>
