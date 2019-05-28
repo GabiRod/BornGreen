@@ -77,14 +77,6 @@ header {
     height: auto;
 }
 
-.titleImage-tablet {
-    display: none;
-}
-
-.titleImage-mobile {
-    display: none;
-}
-
 .social-media-fixed {
     position: fixed;
     top: 50%;
@@ -384,15 +376,6 @@ header {
 }
 
 @media screen and (max-width: 1023px) {
-    .titleImage {
-        display: none;
-    }
-
-    .titleImage-tablet {
-        display: block;
-        width: 100%;
-    }
-
     .process-grid {
         grid-column-gap: 3em;
         grid-row-gap: 1em;
@@ -541,15 +524,6 @@ header {
 }
 
 @media screen and (max-width: 679px) {
-    .titleImage-tablet {
-        display: none;
-    }
-
-    .titleImage-mobile {
-        display: block;
-        width: 100%;
-    }
-
     .social-media-fixed {
         display: none;
     }
