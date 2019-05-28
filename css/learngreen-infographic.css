@@ -265,7 +265,7 @@ input {
 @media screen and (max-width: 1023px) {
     * {
         max-width: 1023px;
-        overflow-x: none;
+
     }
 
     .section-grid {
