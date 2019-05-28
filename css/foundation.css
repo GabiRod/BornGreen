@@ -7,7 +7,7 @@ body {
     border: 0px;
     margin: 0px;
     font-family: 'Open sans', sans-serif;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
