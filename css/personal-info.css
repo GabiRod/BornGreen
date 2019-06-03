@@ -393,10 +393,7 @@ footer {
 
 @media screen and (max-width: 679px) {
     .back-next-buttons {
-        display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        justify-content: center;
     }
 
     .progress-descriptions {
@@ -407,6 +404,12 @@ footer {
         background-color: #517F37;
     }
 
+}
+
+@media only screen and (max-width: 580px) {
+    .back-next-buttons {
+        grid-template-columns: 198px 198px;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -425,6 +428,10 @@ footer {
     .last {
         width: 80%;
     }
+}
 
-
+@media only screen and (max-width: 425px) {
+    .back-next-buttons {
+        grid-template-columns: 150px 150px;
+    }
 }
