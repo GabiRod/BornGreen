@@ -661,15 +661,12 @@ header {
         margin: 0;
     }
 
-    /* copy 4 start !!!!!! */
-
-
-
     .footer {
         background-color: #517F37;
         height: 12em;
         display: flex;
         flex-direction: column;
+        padding-top: 0;
     }
 
     .footer-logo {
@@ -700,6 +697,10 @@ header {
     .footer-some-icons img {
         height: 40px;
         width: auto;
+    }
+
+    .partners-title {
+        padding-top: 0.5rem;
     }
 
     .partners {
