@@ -49,45 +49,51 @@
             </div>
         </div>
     </div>
-    <section class="section-grid">
-        <section>
-            <h2>Your personal information</h2>
-            Your name* <br>
-            <input class="first" required type="text" name="first" value="" placeholder="First">
-            <input class="last" type="text" name="last" value="" placeholder="Last" required>
-            <br>
-            Email adress* <br>
-            <input class="email" type="text" name="email" value="" placeholder="Your email adress..." required>
-            <br>
-            Phone number* <br>
-            <input type="text" name="number" value="" placeholder="Your phone number..." required>
-            <br>
+    <form>
+        <section class="section-grid">
+            <section>
+                <h2>Your personal information</h2>
+                Your name* <br>
+                <input class="first" required type="text" name="first" value="" placeholder="First">
+                <input class="last" type="text" name="last" value="" placeholder="Last" required>
+                <br>
+                Email adress* <br>
+                <input class="email" type="text" name="email" value="" placeholder="Your email adress..." required>
+                <br>
+                Phone number* <br>
+                <input type="text" name="number" value="" placeholder="Your phone number..." required>
+                <br>
+            </section>
+            <section>
+                <h2>Baby's personal information</h2>
+                Baby`s name <br>
+                <input class="first" type="text" name="first-baby " value="" placeholder="First" required>
+                <input class="last" type="text" name="last-baby " value="" placeholder="Last" required>
+                <br>
+                Date of birth <br>
+                <input type="text" name="date of birth" value="" placeholder="DD.MM.YYYY">
+                <br>
+                Personal message for baby* <br>
+                <br>
+                <input style="height:200px;" type="text" name="persoal message" value="" placeholder="You can express your love in maximum 300 caracters" required>
+                <br>
+                *Field are required
+                <div class="box">
+                    <a class="button-gdpr" href="#popup1">?</a>
+                </div>
+            </section>
         </section>
-        <section>
-            <h2>Baby's personal information</h2>
-            Baby`s name <br>
-            <input class="first" type="text" name="First " value="" placeholder="First" required>
-            <input class="last" type="text" name="Last " value="" placeholder="Last" required>
-            <br>
-            Date of birth <br>
-            <input type="text" name="date of birth" placeholder="DD.MM.YYYY">
-            <br>
-            Personal message for baby* <br>
-            <br>
-            <input style="height:200px;" type="text" name="date of birth" value="You can express your love in maximum 300 caracters" required>
-            <br>
-            *Field are required
-            <div class="box">
-                <a class="button-gdpr" href="#popup1">?</a>
-            </div>
-        </section>
-    </section>
-    <div class="back-next-buttons">
-        <a class="back button-hover" href="locationAndTime.html">BACK</a>
-        <a class="next button-hover" name="nextbtn" href="summary.html"> NEXT</a>
-    </div>
+        <div class="back-next-buttons">
+            <a class="back button-hover" href="locationAndTime.html">BACK</a>
+            <a class="next button-hover" name="nextbtn" href="summary.html"> NEXT</a>
+
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="../js/javascript.js"></script>
+
+
 </body>
 
 </html>

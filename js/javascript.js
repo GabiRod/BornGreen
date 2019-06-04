@@ -284,3 +284,27 @@ if (document.body.classList.contains('has-root-animation')) {
         .setTween(tween444)
         .addTo(controller);
 }
+
+
+
+$(function () {
+
+    $(".next")
+
+        .mouseenter(function (e) {
+
+            e.preventDefault();
+
+            var data = $("form").serializeArray();
+
+            $.each(data, function (i, obj) {
+
+                /*console.log(i, obj);*/
+                localStorage.setItem(obj.name, obj.value);
+
+            });
+
+
+        });
+
+});
