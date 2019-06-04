@@ -87,10 +87,15 @@ header {
     flex-direction: column;
 }
 
-.icon-fixed img {
+.social-media-fixed-background:hover {
+    fill: #BF592E;
+}
+
+.icon-fixed svg {
     width: 60px;
     height: 60px;
     margin: 0.5em 0;
+    display: block;
 }
 
 .add-root {
