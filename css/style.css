@@ -11,7 +11,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: Amatic SC, sans-serif;
     font-weight: 400;
 }
@@ -218,6 +219,44 @@ header {
 }
 
 /*--- END OF BODY ---*/
+
+/*--- START OF NEWSLETTER ---*/
+.newsletter-subscription {
+    background-color: #FAC240;
+    text-align: center;
+    padding: 3.5rem 0.5rem;
+}
+
+.newsletter-subscription h4 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.input-email {
+    border-radius: 4px;
+    padding: 0.8em 1em;
+    border: 1px solid black;
+    width: 300px;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.submit-btn {
+    display: block;
+    background-color: #d26123;
+    color: white;
+    border-radius: 0.3em;
+    padding: 0.2em 1.1em;
+    border-bottom: 5px solid #BF592E;
+    border-left: 5px solid #BF592E;
+    border-top: none;
+    border-right: none;
+    font-size: 30px;
+    font-family: Amatic SC, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--- END OF NEWSLETTER ---*/
 
 /*--- START OF FOOTER ---*/
 
@@ -656,11 +695,9 @@ header {
         height: 25%;
     }
 
-    /* copy 4 end !!!!!! */
 
 }
 
-/* copy 5 start !!!!!! */
 @media screen and (max-width: 510px) {
     .partner {
         height: 20%;
@@ -673,4 +710,8 @@ header {
     }
 }
 
-/* copy 5 end !!!!!! */
+@media screen and (max-width: 430px) {
+    .input-email {
+        width: 90%;
+    }
+}
