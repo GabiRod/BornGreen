@@ -270,7 +270,6 @@ header {
 
 /*--- START OF FOOTER ---*/
 
-/* copy 1 start !!!!!! */
 
 .footer {
     background-color: #5a913d;
@@ -278,6 +277,8 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    flex-direction: column;
+    padding-top: 1rem;
 }
 
 .footer-logo {
@@ -294,6 +295,12 @@ header {
 
 .footer-some-icons {
     display: none;
+}
+
+.partners-title {
+    text-align: center;
+    display: block;
+    color: white;
 }
 
 .partners {
