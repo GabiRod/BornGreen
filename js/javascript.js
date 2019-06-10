@@ -285,26 +285,27 @@ if (document.body.classList.contains('has-root-animation')) {
         .addTo(controller);
 }
 
+const form = document.getElementsByTagName("form");
+if (form) {
+    $(function () {
 
+        $(".next")
 
-$(function () {
+            .mouseenter(function (e) {
 
-    $(".next")
+                e.preventDefault();
 
-        .mouseenter(function (e) {
+                var data = $("form").serializeArray();
 
-            e.preventDefault();
+                $.each(data, function (i, obj) {
 
-            var data = $("form").serializeArray();
+                    /*console.log(i, obj);*/
+                    localStorage.setItem(obj.name, obj.value);
 
-            $.each(data, function (i, obj) {
+                });
 
-                /*console.log(i, obj);*/
-                localStorage.setItem(obj.name, obj.value);
 
             });
 
-
-        });
-
-});
+    });
+}
