@@ -116,6 +116,7 @@ header {
 .downArrow img {
     width: 80px;
     height: 80px;
+    transform: translateX(-50%);
 }
 
 .bounce {
@@ -659,6 +660,10 @@ header {
     }
 
     /* End of Mobile Menu*/
+
+    .arrow-container {
+        display: none;
+    }
 
 }
 
