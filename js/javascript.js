@@ -286,6 +286,7 @@ if (document.body.classList.contains('has-root-animation')) {
 }
 
 const form = document.getElementsByTagName("form");
+
 if (form) {
     $(function () {
 
