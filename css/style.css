@@ -704,13 +704,15 @@ header {
     }
 
     .partners {
-        justify-content: space-between;
+        flex-direction: column;
+        margin: 1px;
         height: 50%;
         width: 100%;
     }
 
     .partner {
-        height: 25%;
+        height: 30%;
+        margin: 3px;
     }
 
 
@@ -718,13 +720,13 @@ header {
 
 @media screen and (max-width: 510px) {
     .partner {
-        height: 20%;
+        height: 30%;
     }
 }
 
 @media screen and (max-width: 430px) {
     .partner {
-        height: 12%;
+        height: 30%;
     }
 }
 
