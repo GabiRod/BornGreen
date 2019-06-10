@@ -667,6 +667,7 @@ header {
         display: flex;
         flex-direction: column;
         padding-top: 0;
+        overflow: hidden;
     }
 
     .footer-logo {
@@ -705,7 +706,7 @@ header {
 
     .partners {
         flex-direction: column;
-        margin: 1px;
+        margin: 1px 0;
         height: 50%;
         width: 100%;
     }
