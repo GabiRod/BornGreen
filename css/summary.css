@@ -223,6 +223,10 @@ label {
     border-radius: 5px;
 }
 
+.background-darker {
+    background-color: #EBF5F3;
+}
+
 .inforight {
     align-self: start;
 }
@@ -238,11 +242,9 @@ label {
 .input-voucher {
     display: flex;
     flex-direction: row;
-
-
 }
 
-.input-input {
+.input-voucher-input {
     margin-left: 1em;
 }
 
