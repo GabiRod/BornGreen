@@ -244,8 +244,17 @@ label {
     flex-direction: row;
 }
 
+.input-voucher-dot {
+    margin: auto 1rem auto 0;
+}
+
 .input-voucher-input {
     margin-left: 1em;
+}
+
+.payment-methods {
+    width: 570px;
+    margin: 0 auto;
 }
 
 /*--- END OF BODY ---*/
@@ -322,7 +331,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-content: center;
-
     }
 
     .inforight,
@@ -331,10 +339,13 @@ footer {
         width: 90%;
     }
 
-
-
     .progress-descriptions {
         display: none;
+    }
+
+    .payment-methods {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
