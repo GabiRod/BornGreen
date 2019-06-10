@@ -313,6 +313,12 @@ header {
     margin: auto 15px;
 }
 
+.partners-title {
+    text-align: center;
+    display: block;
+    color: white;
+}
+
 /*--- END OF FOOTER ---*/
 
 @media screen and (max-width: 1500px) {
@@ -496,6 +502,7 @@ header {
         height: 12em;
         display: flex;
         flex-direction: column;
+        padding-top: 0;
     }
 
     .footer-logo {
@@ -532,17 +539,22 @@ header {
         justify-content: space-between;
         height: 50%;
         width: 100%;
+        flex-direction: column;
     }
 
     .partner {
         height: 25%;
     }
 
+    .partners-title {
+        padding-top: 0.5rem;
+    }
+
 }
 
 @media screen and (max-width: 510px) {
     .partner {
-        height: 20%;
+        height: 30%;
     }
 }
 
@@ -552,7 +564,7 @@ header {
     }
 
     .partner {
-        height: 12%;
+        height: 30%;
     }
 
 }
