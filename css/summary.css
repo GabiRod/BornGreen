@@ -223,6 +223,12 @@ label {
     border-radius: 5px;
 }
 
+.name {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+
+}
+
 .background-darker {
     background-color: #EBF5F3;
 }
