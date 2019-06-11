@@ -40,110 +40,111 @@
     </section>
     <!-- End of progress bar -->
     <!--    end of HEADING     -->
-
-    <h1>Summary of your order</h1>
-    <section class="container">
-        <div class="infoleft">
-            <div class="all">
-                <div class="txt">
-                    <label>Tree:</label>
+    <form class="form-summary">
+        <h1>Summary of your order</h1>
+        <section class="container">
+            <div class="infoleft">
+                <div class="all">
+                    <div class="txt">
+                        <label>Tree:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="typetree" name="tree" placeholder="Here you will see the tree" readonly>
+                    </div>
                 </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="typetree" name="tree" placeholder="Here you will see the tree" readonly>
+
+                <div class="all">
+                    <div class="txt">
+                        <label>Location:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="location" name="location" placeholder="Here you will see the location" readonly>
+                    </div>
+                </div>
+
+                <div class="all">
+                    <div class="txt">
+                        <label>Season:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="time" name="time" placeholder="Here you will see the month" readonly>
+                    </div>
+                </div>
+
+                <div class="all">
+                    <div class="txt">
+                        <label>Your name:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="name" name="first" placeholder="Here you will see your name" readonly>
+                    </div>
+                </div>
+
+                <div class="all">
+                    <div class="txt">
+                        <label>Email address:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="email" name="email" placeholder="Here you will see your email" readonly>
+                    </div>
+                </div>
+
+                <div class="all">
+                    <div class="txt">
+                        <label>Phone number:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="phone" name="number" placeholder="Here you will see your phone number" readonly>
+                    </div>
                 </div>
             </div>
 
-            <div class="all">
-                <div class="txt">
-                    <label>Location:</label>
+            <div class="inforight">
+                <div class="all">
+                    <div class="txt">
+                        <label>Baby's name:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="babyname" name="first-baby" placeholder="Here you will see the baby's name" readonly>
+                    </div>
                 </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="locationtree" name="location" placeholder="Here you will see the location" readonly>
+                <div class="all">
+                    <div class="txt">
+                        <label>Baby's birthday:</label>
+                    </div>
+                    <div class="data">
+                        <input class="background-darker" type="text" id="babybirthday" name="date of birth" placeholder="Here you will see the baby's birthday" readonly>
+                    </div>
                 </div>
-            </div>
 
-            <div class="all">
-                <div class="txt">
-                    <label>Season:</label>
-                </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="seasontree" name="season" placeholder="Here you will see the month" readonly>
-                </div>
-            </div>
 
-            <div class="all">
-                <div class="txt">
-                    <label>Your name:</label>
-                </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="name" name="yourname" placeholder="Here you will see your name" readonly>
-                </div>
-            </div>
+                <div class="all">
+                    <div class="txt">
+                        <label>Personal message:</label>
+                    </div>
+                    <div class="data">
 
-            <div class="all">
-                <div class="txt">
-                    <label>Email address:</label>
-                </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="email" name="youremail" placeholder="Here you will see your email" readonly>
+                        <input class="background-darker" type="text" id="message" name="personal message" placeholder="Here you will see your personal message" readonly>
+                    </div>
                 </div>
             </div>
-
-            <div class="all">
-                <div class="txt">
-                    <label>Phone number:</label>
-                </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="phone" name="phonenumber" placeholder="Here you will see your phone number" readonly>
-                </div>
-            </div>
+        </section>
+        <section class="payment-methods">
+            <h2>Choose a payment method</h2>
+            <p class="input-voucher">
+                <input type="radio" id="voucher" class="input-voucher-dot" name="payment" value="Voucher"> <label>Voucher</label>
+                <input type="text" id="code" class="input-voucher-input" name="vouchercode" placeholder="VOUCHER CODE">
+            </p>
+            <br>
+            <p>
+                <input type="radio" id="online" class="input-voucher-dot" name="payment" value="Voucher">Online payment
+            </p>
+        </section>
+        <div class="back-next-buttons">
+            <a class="back button-hover" href="personalInfo.html">BACK</a>
+            <a class="send button-hover" href="succes.html">SUBMIT</a>
         </div>
-
-        <div class="inforight">
-            <div class="all">
-                <div class="txt">
-                    <label>Baby's name:</label>
-                </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="babyname" name="baby" placeholder="Here you will see the baby's name" readonly>
-                </div>
-            </div>
-            <div class="all">
-                <div class="txt">
-                    <label>Baby's birthday:</label>
-                </div>
-                <div class="data">
-                    <input class="background-darker" type="text" id="babybirthday" name="baby" placeholder="Here you will see the baby's birthday" readonly>
-                </div>
-            </div>
-
-
-            <div class="all">
-                <div class="txt">
-                    <label>Personal message:</label>
-                </div>
-                <div class="data">
-
-                    <input class="background-darker" type="text" id="message" name="personalmessage" placeholder="Here you will see your personal message" readonly>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="payment-methods">
-        <h2>Choose a payment method</h2>
-        <p class="input-voucher">
-            <input type="radio" id="voucher" class="input-voucher-dot" name="payment" value="Voucher"> <label>Voucher</label>
-            <input type="text" id="code" class="input-voucher-input" name="vouchercode" placeholder="VOUCHER CODE">
-        </p>
-        <br>
-        <p>
-            <input type="radio" id="online" class="input-voucher-dot" name="payment" value="Voucher">Online payment
-        </p>
-    </section>
-    <div class="back-next-buttons">
-        <a class="back button-hover" href="personalInfo.html">BACK</a>
-        <a class="send button-hover" href="succes.html">SUBMIT</a>
-    </div>
+    </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="../js/javascript.js"></script>

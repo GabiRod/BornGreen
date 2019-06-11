@@ -290,23 +290,34 @@ const form = document.getElementsByTagName("form");
 if (form) {
     $(function () {
 
-        $(".next")
+        $(".next").mouseenter(function (e) {
 
-            .mouseenter(function (e) {
+            e.preventDefault();
 
-                e.preventDefault();
+            localStorage.setItem("flag", "set");
 
-                var data = $("form").serializeArray();
+            let data = $("form").serializeArray();
 
-                $.each(data, function (i, obj) {
+            $.each(data, function (i, obj) {
 
-                    /*console.log(i, obj);*/
-                    localStorage.setItem(obj.name, obj.value);
-
-                });
-
+                /*console.log(i, obj);*/
+                localStorage.setItem(obj.name, obj.value);
 
             });
 
+
+        });
+
+        if (localStorage.getItem("flag") == "set") {
+
+            let data = $(".form-summary").serializeArray();
+
+            $.each(data, function (i, obj) {
+
+                $("[name='" + obj.name + "']").val(localStorage.getItem(obj.name));
+
+
+            });
+        }
     });
 }
