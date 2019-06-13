@@ -207,6 +207,12 @@ header {
     background-color: #5A913D;
 }
 
+/*
+.dot {
+    height: 5em;
+    width: auto;
+}*/
+
 /*----------------------BUTTONS----------------------------------------------------------------------------------------------*/
 .back-next-button {
     display: grid;
