@@ -288,36 +288,36 @@ if (document.body.classList.contains('has-root-animation')) {
 const form = document.getElementsByTagName("form");
 
 if (form) {
-    $(function () {
 
-        $(".next").mouseenter(function (e) {
 
-            e.preventDefault();
+    $(".next").mouseenter(function (e) {
 
-            localStorage.setItem("flag", "set");
+        e.preventDefault();
 
-            let data = $("form").serializeArray();
+        localStorage.setItem("flag", "set");
 
-            $.each(data, function (i, obj) {
+        let data = $("form").serializeArray();
 
-                /*console.log(i, obj);*/
-                localStorage.setItem(obj.name, obj.value);
+        $.each(data, function (i, obj) {
 
-            });
-
+            /*console.log(i, obj);*/
+            localStorage.setItem(obj.name, obj.value);
 
         });
 
-        if (localStorage.getItem("flag") == "set") {
 
-            let data = $(".form-summary").serializeArray();
-
-            $.each(data, function (i, obj) {
-
-                $("[name='" + obj.name + "']").val(localStorage.getItem(obj.name));
-
-
-            });
-        }
     });
+
+    if (localStorage.getItem("flag") == "set") {
+
+        let data = $(".form-summary").serializeArray();
+
+        $.each(data, function (i, obj) {
+
+            $("[name='" + obj.name + "']").val(localStorage.getItem(obj.name));
+
+
+        });
+    }
+
 }
