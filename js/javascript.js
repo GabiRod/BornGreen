@@ -287,37 +287,34 @@ if (document.body.classList.contains('has-root-animation')) {
 
 const form = document.getElementsByTagName("form");
 
-if (form) {
-    $(function () {
+if (form.length) {
+    $(".next").mouseenter(function (e) {
 
-        $(".next").mouseenter(function (e) {
+        e.preventDefault();
 
-            e.preventDefault();
+        localStorage.setItem("flag", "set");
 
-            localStorage.setItem("flag", "set");
+        let data = $("form").serializeArray();
 
-            let data = $("form").serializeArray();
+        $.each(data, function (i, obj) {
 
-            $.each(data, function (i, obj) {
-
-                /*console.log(i, obj);*/
-                localStorage.setItem(obj.name, obj.value);
-
-            });
-
+            /*console.log(i, obj);*/
+            localStorage.setItem(obj.name, obj.value);
 
         });
 
-        if (localStorage.getItem("flag") == "set") {
 
-            let data = $(".form-summary").serializeArray();
-
-            $.each(data, function (i, obj) {
-
-                $("[name='" + obj.name + "']").val(localStorage.getItem(obj.name));
-
-
-            });
-        }
     });
+
+    if (localStorage.getItem("flag") == "set") {
+
+        let data = $(".form-summary").serializeArray();
+
+        $.each(data, function (i, obj) {
+
+            $("[name='" + obj.name + "']").val(localStorage.getItem(obj.name));
+
+
+        });
+    }
 }
