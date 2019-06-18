@@ -287,9 +287,9 @@ if (document.body.classList.contains('has-root-animation')) {
 
 const form = document.getElementsByTagName("form");
 
-if (form) {
 
 
+if (form.length) {
     $(".next").mouseenter(function (e) {
 
         e.preventDefault();
@@ -307,17 +307,4 @@ if (form) {
 
 
     });
-
-    if (localStorage.getItem("flag") == "set") {
-
-        let data = $(".form-summary").serializeArray();
-
-        $.each(data, function (i, obj) {
-
-            $("[name='" + obj.name + "']").val(localStorage.getItem(obj.name));
-
-
-        });
-    }
-
 }
